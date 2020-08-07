@@ -1,0 +1,15 @@
+@media (max-width: 943px) {
+    .wrapper_main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .product_photo {
+        width: 210px;
+    }
+    .form-control {
+        width: 408px;
+    }
+
+}

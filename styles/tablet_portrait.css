@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+    .product_photo {
+        width: 258px;
+    }
+    .ipad_button {
+        top: 145px;
+        position: absolute;
+        color: black;
+        right: 15px;
+    }
+    .blackbar {
+        font-size: small;
+    }
+    .colorblack {
+        color: black;
+    }
+
+    .landscape_view {
+        flex-flow: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .cart {
+        width: 30px;
+        height: 30px;
+    }
+    .cart_box {
+        font-size: small;
+    }
+    .form-control {
+        width: 270px;
+    }
+    .product_photo_item {
+        width: 180px;
+        height: 195px;
+    }
+   .footer_landscape {
+       flex-flow: wrap;
+   }
+   .footer_landscape_item {
+       width: 50%;
+   }
+}

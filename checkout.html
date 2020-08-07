@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/laptop.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/tablet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+</head>
+
+<body>
+<header>
+    <nav class="top_nav">
+        <div class="top_nav_bar container">
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">Товары</a></li>
+                <li><a class="menu__item" href="#">Доставка и оплата</a></li>
+                <li><a class="menu__item" href="#">Контакты</a></li>
+                <li><a class="menu__item" href="#">Вопросы и ответы</a></li>
+                <li><a class="menu__item" href="#">Гарантии и возврат</a></li>
+            </ul>
+            <ul class="menu__box">+38 (096) 207 84 83</ul>
+        </div>
+
+    </nav>
+    <div class="search_block">
+        <div class="container flexbox">
+            <div><img class="logo" src="./images/logo.jpg"/></div>
+            <div class="search_field">
+                <input class="form-control" type="text" aria-label="Search">
+                <img class="search_img" src="images/search.png"/>
+            </div>
+            <div class="cart_box">
+                <img class="cart" src="images/Cart.png" height="450" width="450"/>
+                <p>: 2000 грн</p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <ul class="blackbar container">
+            <li><a class="blackbar__item" href="#"><img class="nav_icon" src="./images/ballon.svg"> Латексные шары</a>
+            </li>
+            <li><a class="blackbar__item" href="#"><img class="nav_icon" src="./images/balloon heart.png"/>
+                Фольгированные шары</a></li>
+            <li><a class="blackbar__item" href="#"><img class="nav_icon" src="./images/Celebrate.png"/> Товары для
+                праздника</a></li>
+            <li><a class="blackbar__item" href="#"><img class="nav_icon star" src="./images/star.svg"/> Коллекции</a>
+            </li>
+            <li class="btn"><a class="blackbar__item button" href="#"> Оформить мероприятие</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <p class="path">Главная / Корзина / Оформление заказа</p>
+    <div class="noMargin_flexbox">
+        <div class="checkout_box">
+            <div class="form_box col"><img class="table_icon" src="./images/contact.png"/><span
+                    class="delivery">КОНТАКТЫ</span></div>
+            <div class="form_box col">
+                <form class="radio_inline" name="test" method="post" action="input1.php">
+                    <p>Ваше имя<br>
+                        <input class="input_item" type="text" size="40">
+                    </p>
+                    <p>Ваш телефон<br>
+                        <input class="input_item" type="text" size="40">
+                    </p>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="total">
+            <div class="noMargin_flexbox">
+                <span class="font_xl">Корзина</span>
+                <div class="price font_xl">1,32 грн</div>
+            </div>
+            <div class="noMargin_flexbox">
+                <span class="font_xl">Доставка</span>
+                <div class="price font_xl">50 грн</div>
+            </div>
+            <div class="noMargin_flexbox">
+                <span class="font_xl"><strong>ИТОГО</strong></span>
+                <div class="price font_xl"><strong>51,32 грн</strong></div>
+            </div>
+
+            <button class="button black_button">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+            <button class="button white_button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+
+        </div>
+    </div>
+    <div class="checkout_box">
+        <div class="form_box col"><img class="table_icon" src="./images/contact.png"/><span
+                class="delivery">ДОСТАВКА</span></div>
+        <div class="form_box col">
+            <form class="" name="test" method="post" action="">
+                <div id="group_delivery" class="radio_inline">
+                    <input type="radio" id="city" name="group_delivery" value="city">
+                    <label class="radio_item" for="city">Доставка по городу</label><br>
+                    <input type="radio" id="self" name="group_delivery" value="self">
+                    <label class="radio_item" for="self">Самовывоз</label><br>
+                    <input type="radio" id="np" name="group_delivery" value="np">
+                    <label class="radio_item" for="np">Новая Почта</label>
+                </div>
+                <br>
+                <p class="text_reg">Выберите дату и желаемое время доставки. Условия доставки подтверждаются оператором</p><br>
+
+                <input class="left_item input_item" id="start" type="date" name="trip-start"
+                       value="2020-01-01"
+                       min="2020-01-01" max="2020-12-31">
+
+                <input class="left_item input_item" id="appt-time" type="time" name="appt-time"
+                       value="12:00"></br>
+                <p class="text_reg">Адрес доставки</p><br>
+                <input class="left_item input_item fullWidth" type="text" id="address" name="address" value="Введите адрес доставки..."><br>
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="flexbox container">
+        <ul>
+            <li class="title">ПОКУПАТЕЛЯМ</li>
+            <li class="footer_link"><a class="blackbar__item" href="">Доставка и оплата</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Каталог товаров</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Вопросы и ответы</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Гарантия и возврат</a></li>
+        </ul>
+        <ul>
+            <li class="title">КОМПАНИЯ</li>
+            <li class="footer_link"><a class="blackbar__item" href="">О нас</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Реквизиты</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Программа лояльности</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Вакансии</a></li>
+        </ul>
+        <ul>
+            <li class="title">КОНТАКТЫ</li>
+            <li class="footer_link"><a class="blackbar__item" href=""><i class="fas fa-phone"></i> +38 (063)
+                000-00-00</a></li>
+            <li class="footer_link"><a class="blackbar__item" href=""><i class="fas fa-envelope"></i> shop@shop.com</a>
+            </li>
+            <li class="footer_link insta_link"><a class="blackbar__item button" href=""><img class="colored_icon"
+                                                                                             src="./images/instagram-sketched.png"
+                                                                                             alt=""><span
+                    class="goToInsta">ПЕРЕЙТИ В INSTAGRAM</span> </a></li>
+        </ul>
+        <ul>
+            <li class="title">ПИШИТЕ НАМ</li>
+            <li class="footer_link"><a class="blackbar__item" href=""><img class="colored_icon" src="./images/viber.svg"
+                                                                           alt=""><span
+                    class="goToInsta">Viber</span></a></li>
+            <li class="footer_link"><a class="blackbar__item" href=""><img class="colored_icon"
+                                                                           src="./images/telegram.svg" alt=""><span
+                    class="goToInsta">Telegram</span></a></li>
+            <li class="footer_link"><a class="blackbar__item" href=""><img class="colored_icon chat"
+                                                                           src="./images/chat.png" alt=""><span
+                    class="goToInsta">Чат на сайте</span></a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
