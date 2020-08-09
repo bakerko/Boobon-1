@@ -9,26 +9,28 @@
     <link rel="stylesheet" href="styles/tablet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="styles/tablet_portrait.css">
+    <link rel="stylesheet" href="styles/mobile_320.css">
+    <script src="js/sidebar.js"></script>
 </head>
 
 <body>
 <header>
     <nav class="top_nav">
         <div class="top_nav_bar container">
-            <ul class="menu__box">
+            <ul class="menu__box mob_menu">
                 <li><a class="menu__item" href="#">Товары</a></li>
                 <li><a class="menu__item" href="#">Доставка и оплата</a></li>
-                <li><a class="menu__item" href="#">Контакты</a></li>
                 <li><a class="menu__item" href="#">Вопросы и ответы</a></li>
                 <li><a class="menu__item" href="#">Гарантии и возврат</a></li>
+                <li><a class="menu__item" href="#">Контакты</a></li>
             </ul>
-            <ul class="menu__box">+38 (096) 207 84 83</ul>
+            <ul class="menu__box tel"><a href="tel:+38 (096) 207 84 83"><b> +38 (096) 207 84 83</b></a></ul>
         </div>
 
     </nav>
     <div class="search_block">
-        <div class="container flexbox">
+        <div class="container flexbox flex_mob">
             <div><img class="logo" src="./images/logo.jpg"/></div>
             <div class="search_field">
                 <input class="form-control" type="text" aria-label="Search">
@@ -36,7 +38,7 @@
             </div>
             <div class="cart_box">
                 <img class="cart" src="images/Cart.png" height="450" width="450"/>
-                <p>: 2000 грн</p>
+                <p><b>: 2000 грн</b></p>
             </div>
         </div>
     </div>
@@ -51,24 +53,35 @@
                 праздника</a></li>
             <li><a class="blackbar__item" href="#"><img class="nav_icon star" src="./images/star.svg"/> Коллекции</a>
             </li>
-            <li class="btn"><a class="blackbar__item button" href="#"> Оформить мероприятие</a></li>
+            <li class="btn ipad_button"><a class="blackbar__item button colorblack" href="#"> Оформить мероприятие</a>
+            </li>
         </ul>
+        <div id="mySidenav" class="mobile_only sidenav ">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Латексные шары</a>
+            <a href="#">Фольгированные шары</a>
+            <a href="#">Товары для праздника</a>
+            <a href="#">Коллекции</a>
+            <a href="#">Оформить мероприятие</a>
+        </div>
+        <p class=" mobile_only side_menu" onclick="openNav()">MENU</p>
+
     </nav>
 </header>
 
 <main class="container">
     <p class="path">Главная / Корзина</p>
 
-    <div class="noMargin_flexbox">
-        <div class="description noMargin_flexbox">
-            <a href=""><img class="baloon" src="images/1baloon.png"/></a>
-            <p class="padding">КОНФЕТТИ ГЛИТТЕР СЕРЕБРО</p>
-            <div class="box"><span>+</span><span>1</span><span>-</span></div>
-            <p class="padding"> 1,32 грн</p>
-            <div><img class="close_image" src="./images/close_black.png" alt=""></div>
+    <div class="noMargin_flexbox tablet_cart">
+        <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+            <a href=""><img class="baloon baloon_small" src="images/1baloon.png"/></a>
+            <p class="padding mob_title">КОНФЕТТИ ГЛИТТЕР СЕРЕБРО</p>
+            <div class="box box_laptop"><span>+</span><span class="span1">1</span><span>-</span></div>
+            <p class="padding mob_title"> 1,32 грн</p>
+            <div><img class="close_image close_image_mob" src="./images/close_black.png" alt=""></div>
         </div>
 
-        <div class="total">
+        <div class="total tablet_total">
             <span class="font_xl">ВСЕГО</span>
             <div class="price font_xl">1,32 грн</div>
             <button class="button black_button">ОФОРМИТЬ ЗАКАЗ</button>
@@ -78,22 +91,22 @@
     </div>
 </main>
 <footer class="footer">
-    <div class="flexbox container">
-        <ul>
+    <div class="flexbox container footer_landscape">
+        <ul class="footer_landscape_item">
             <li class="title">ПОКУПАТЕЛЯМ</li>
             <li class="footer_link"><a class="blackbar__item" href="">Доставка и оплата</a></li>
             <li class="footer_link"><a class="blackbar__item" href="">Каталог товаров</a></li>
             <li class="footer_link"><a class="blackbar__item" href="">Вопросы и ответы</a></li>
             <li class="footer_link"><a class="blackbar__item" href="">Гарантия и возврат</a></li>
         </ul>
-        <ul>
+        <ul class="footer_landscape_item">
             <li class="title">КОМПАНИЯ</li>
             <li class="footer_link"><a class="blackbar__item" href="">О нас</a></li>
             <li class="footer_link"><a class="blackbar__item" href="">Реквизиты</a></li>
             <li class="footer_link"><a class="blackbar__item" href="">Программа лояльности</a></li>
             <li class="footer_link"><a class="blackbar__item" href="">Вакансии</a></li>
         </ul>
-        <ul>
+        <ul class="footer_landscape_item">
             <li class="title">КОНТАКТЫ</li>
             <li class="footer_link"><a class="blackbar__item" href=""><i class="fas fa-phone"></i> +38 (063)
                 000-00-00</a></li>
@@ -104,7 +117,7 @@
                                                                                              alt=""><span
                     class="goToInsta">ПЕРЕЙТИ В INSTAGRAM</span> </a></li>
         </ul>
-        <ul>
+        <ul class="footer_landscape_item">
             <li class="title">ПИШИТЕ НАМ</li>
             <li class="footer_link"><a class="blackbar__item" href=""><img class="colored_icon" src="./images/viber.svg"
                                                                            alt=""><span

@@ -12,12 +12,100 @@
         justify-content: center;
     }
 
+    .input_item {
+        width: 52%;
+    }
+
+    .flex_wrap {
+        width: auto;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .mob_title {
+        padding-top: 0;
+    }
+
+    .footer_landscape {
+        flex-flow: column;
+    }
+
+    .pos_relative {
+        position: relative;
+    }
+
+    .close_image_mob {
+        right: -20px;
+        height: 23px;
+        width: 23px;
+        position: absolute;
+        top: -39px;
+    }
+
+    .baloon_small {
+        width: 228px;
+        height: auto;
+    }
+
+    .tel {
+        font-size: larger;
+    }
+
+    .text_description_title {
+        font-size: 14px;
+    }
+
+    .mob_small_baloon {
+        width: 120px;
+        height: auto;
+        padding: 5px;
+    }
+
     .search_block {
         height: auto;
     }
 
     .cart_box {
         margin: 15px;
+    }
+
+    .buy_button {
+        font-size: small;
+        padding: 10px 5%;
+    }
+
+    .box {
+        padding: 8px 10%;
+    }
+
+    .mob_desrc {
+        display: block;
+        text-align: center;
+    }
+
+    .bottom_descr_style {
+        left: 29px;
+        top: 12px;
+        font-size: smaller;
+    }
+
+    .product_img {
+        width: 20px;
+        height: 20px;
+        padding: 7px 0;
+    }
+
+    .text_description {
+        padding: 0 20px 25px;
+    }
+
+    section {
+        width: 100%;
+        float: none;
     }
 
     .form-control {
@@ -27,14 +115,34 @@
     .blackbar {
         display: none;
     }
+
+    .product_description_top {
+        width: 100%;
+    }
+
     .side_menu {
         color: white;
         text-align: center
     }
 
+    .mob_menu {
+        justify-content: space-between;
+        flex-flow: wrap;
+    }
+
+    .menu__item:hover {
+        color: #D4ACB5;
+    }
+
     .side_menu:hover {
         color: silver;
     }
+
+    .mob_baloon {
+        height: auto;
+        width: 260px;
+    }
+
     .sidenav {
         height: 100%;
         width: 0;
@@ -47,6 +155,7 @@
         padding-top: 60px;
         transition: 0.5s;
     }
+
     .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;

@@ -2,4 +2,27 @@
     .product_photo {
         width: 210px;
     }
+    .adaptive_float {
+        float: right;
+    }
+    section {
+        width: 100%;
+        float: none;
+    }
+    .text_description {
+        margin-bottom: 30px;
+    }
+    .span1 {
+        padding: 0 20px;
+    }
+    .box_laptop {
+        padding: 10px 5%;
+    }
+    .radio_inline {
+        display: inline-block;
+        line-height: 2rem;
+    }
+    .table_input {
+        width: 80%;
+    }
 }

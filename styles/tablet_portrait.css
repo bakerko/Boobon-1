@@ -2,15 +2,25 @@
     .product_photo {
         width: 258px;
     }
+
     .ipad_button {
         top: 145px;
         position: absolute;
         color: black;
         right: 15px;
     }
+
     .blackbar {
         font-size: small;
     }
+
+    .font_xl {
+        font-size: 16px;
+    }
+    .font_xs {
+        font-size: x-small;
+    }
+
     .colorblack {
         color: black;
     }
@@ -28,20 +38,45 @@
         width: 30px;
         height: 30px;
     }
+
+    .tablet_cart {
+        display: block;
+    }
+     .checkout_box {
+         width: 100%;
+     }
+    .tablet_description {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .tablet_total {
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
     .cart_box {
         font-size: small;
     }
+
     .form-control {
         width: 270px;
     }
+
     .product_photo_item {
         width: 180px;
         height: 195px;
     }
-   .footer_landscape {
-       flex-flow: wrap;
-   }
-   .footer_landscape_item {
-       width: 50%;
-   }
+
+    .footer_landscape {
+        flex-flow: wrap;
+    }
+
+    .footer_landscape_item {
+        width: 50%;
+    }
+
+    .table_input {
+        width: 70%;
+    }
 }

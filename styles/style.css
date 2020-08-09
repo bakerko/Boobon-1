@@ -45,7 +45,7 @@ a {
 
 .top_nav {
     font-size: 12px;
-    height: 40px;
+    height: max-content;
     background-color: #F9F8F8;
 }
 
@@ -70,6 +70,10 @@ a {
     padding-right: 25px;
 }
 
+.menu__item:hover {
+    color: #D4ACB5;
+}
+
 .search_block {
     background-image: url("../images/headerImage.png");
     height: 185px;
@@ -91,6 +95,7 @@ a {
 
 .form-control {
     border-radius: 30px;
+    padding-left: 15px;
 }
 
 .path {
@@ -132,6 +137,10 @@ a {
 .blackbar__item {
     color: white;
     text-decoration: none;
+}
+
+.blackbar__item:hover {
+    color: #D4ACB5;
 }
 
 .blackbar {
@@ -266,6 +275,7 @@ ul {
 .total {
     padding: 15px;
     width: 25%;
+    height: max-content;
     border: 1px solid lightgrey;
     border-radius: 3px;
 }
@@ -292,6 +302,14 @@ ul {
     padding-top: 30px;
 }
 
+.span1 {
+    padding: 0 15px;
+}
+
+.box_laptop {
+    display: block;
+}
+
 .box {
     border-radius: 10px;
     margin: 40px;
@@ -299,9 +317,8 @@ ul {
     font-size: larger;
     height: max-content;
     border: 1px solid lightgrey;
-    width: 136px;
-    padding: 10px;
-    display: inline-flex;
+    padding: 10px 10%;
+    /*display: inline-flex;*/
     justify-content: space-around;
 }
 
@@ -339,12 +356,17 @@ ul {
 .radio_inline {
     display: inline-flex;
     justify-content: space-evenly;
-    margin: 20px;
+    margin: 0 20px;
+    line-height: 2rem;
+}
+.radio_inline > p {
+    padding-right: 20px;
 }
 
 .input_item {
     padding: 10px 40px;
-    margin-right: 20px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
 }
 
 .radio_item {
@@ -353,7 +375,7 @@ ul {
 
 .text_reg {
     font-size: smaller;
-    margin-left: 20px;
+    margin: 20px;
 }
 
 .left_item {
@@ -387,7 +409,10 @@ ul {
     color: black;
     font-weight: bold;
     font-size: 14px;
-    /*text-align: center;*/
+}
+
+.prod_name:hover {
+    color: #D4ACB5;
 }
 
 .horisontal {
@@ -501,7 +526,7 @@ ul {
 .buy_button {
     background-color: black;
     color: white;
-    padding: 10px 40px;
+    padding: 10px 10%;
     font-size: larger;
 }
 
@@ -521,6 +546,10 @@ ul {
 .right_side_table {
     text-align: right;
     color: grey;
+}
+
+.table_icon {
+    filter: invert(0.7);
 }
 
 .no_border {
