@@ -24,6 +24,9 @@
     .colorblack {
         color: black;
     }
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
 
     .landscape_view {
         flex-flow: wrap;

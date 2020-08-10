@@ -14,9 +14,15 @@
         flex-flow: wrap;
         justify-content: center;
     }
-
+    .color{
+        width: 20px;
+        height: 20px;
+    }
     .input_item {
         width: 52%;
+    }
+    .mobile_grid {
+        display: grid;
     }
 
     .flex_wrap {
@@ -28,7 +34,10 @@
     .none {
         display: none;
     }
-
+.aside {
+    font-size: initial;
+    padding: 0 30px 30px;
+}
     .mob_title {
         padding-top: 0;
     }
@@ -114,7 +123,7 @@
 
     section {
         width: 100%;
-        float: none;
+        margin-top: 55px;
     }
 
     .form-control {

@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
 main {
@@ -11,13 +12,39 @@ section {
     float: right;
     width: 60%;
 }
-
+.color{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.color-red {
+    background-color: red;
+}
+.color-yellow {
+    background-color: yellow;
+}
+.color-orange {
+    background-color: darkorange;
+}
+.color-violet {
+    background-color: violet;
+}
+.color-black {
+    background-color: black;
+}
+.color-darkviolet {
+    background-color: darkviolet;
+}
+.color-white {
+    background-color: whitesmoke;
+}
 .aside {
     float: left;
     width: 25%;
     border: 1px solid lightgrey;
     height: max-content;
-    padding: 0 30px;
+    padding: 0 30px 30px;
 }
 
 footer {
