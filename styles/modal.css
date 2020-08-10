@@ -57,3 +57,11 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+@media (max-width: 376px) {
+    .modal-content {
+        width: 45%;
+    }
+    .modal {
+        padding-top: 20%;
+    }
+}

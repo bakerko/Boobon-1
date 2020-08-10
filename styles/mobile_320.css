@@ -14,12 +14,17 @@
     .footer_landscape {
         flex-flow: column;
     }
+.big_container {
+    font-size: smaller;
+}
     .radio_inline > p {
         margin: 0;
     }
-.mobile_footer_item {
-    width: 100%;
-}
+
+    .mobile_footer_item {
+        width: 100%;
+    }
+
     .menu__box {
         display: inline-flex;
     }
@@ -75,6 +80,10 @@
         font-size: initial;
     }
 
+    .delivery {
+        padding: 20px 100px;
+    }
+
     .table_input {
         width: 52%;
     }
@@ -84,6 +93,10 @@
         display: inline-table;
         width: auto;
         /*visibility: collapse;*/
+    }
+
+    .table_icon {
+        left: 0;
     }
 
     .sidenav {
