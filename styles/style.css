@@ -4,6 +4,10 @@ body {
     box-sizing: border-box;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 main {
     min-height: 100vh;
 }
@@ -12,33 +16,42 @@ section {
     float: right;
     width: 60%;
 }
-.color{
+
+.color {
     width: 25px;
     height: 25px;
     border-radius: 5px;
     margin: 10px 0;
 }
+
 .color-red {
     background-color: red;
 }
+
 .color-yellow {
     background-color: yellow;
 }
+
 .color-orange {
     background-color: darkorange;
 }
+
 .color-violet {
     background-color: violet;
 }
+
 .color-black {
     background-color: black;
 }
+
 .color-darkviolet {
     background-color: darkviolet;
 }
+
 .color-white {
     background-color: whitesmoke;
 }
+
 .aside {
     float: left;
     width: 25%;
@@ -602,4 +615,28 @@ ul {
 
 .align_center {
     text-align: center;
+}
+
+.amount {
+    font-size: 24px;
+    align-self: center;
+}
+
+.amount span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.amount span:hover {
+   color: #D4ACB5;
+}
+
+.amount input {
+    font-size: 24px;
+    width: 38px;
+    text-align: center;
+    border: none;
 }

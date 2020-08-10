@@ -44,6 +44,7 @@
 
     .footer_landscape {
         flex-flow: column;
+        padding-top: 20px;
     }
 
     .pos_relative {
