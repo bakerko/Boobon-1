@@ -4,7 +4,7 @@
     }
 
     .ipad_button {
-        top: 145px;
+        top: 21%;
         position: absolute;
         color: black;
         right: 15px;
@@ -21,6 +21,9 @@
         font-size: x-small;
     }
 
+    .top_nav_bar {
+        flex-direction: column;
+    }
     .colorblack {
         color: black;
     }

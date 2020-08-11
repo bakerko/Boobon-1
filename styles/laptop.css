@@ -28,4 +28,11 @@
     .table_input {
         width: 80%;
     }
+    .tablet_total {
+        width: 50%;
+        padding: 20px;
+    }
+    .big_container {
+        width: 90%;
+    }
 }

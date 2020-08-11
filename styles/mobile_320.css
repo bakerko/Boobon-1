@@ -36,6 +36,9 @@
     .mob_menu {
         width: 100%;
     }
+    .mob_menu > li {
+        padding: 10px;
+    }
 
     .top_nav_bar {
         flex-wrap: wrap;

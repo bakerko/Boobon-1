@@ -2,6 +2,7 @@
     .wrapper_main {
         grid-template-columns: 1fr 1fr;
     }
+
     .container {
         padding: 0 25px;
     }
@@ -10,17 +11,24 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .column_view {
+        display: block;
+    }
+
     .flex_mob {
         flex-flow: wrap;
         justify-content: center;
     }
-    .color{
+
+    .color {
         width: 20px;
         height: 20px;
     }
+
     .input_item {
         width: 52%;
     }
+
     .mobile_grid {
         display: grid;
     }
@@ -34,12 +42,23 @@
     .none {
         display: none;
     }
-.aside {
-    font-size: initial;
-    padding: 0 30px 30px;
-}
+
+    .big_container {
+        width: 100%;
+    }
+
+    .aside {
+        font-size: initial;
+        padding: 0 30px 30px;
+    }
+
     .mob_title {
         padding-top: 0;
+    }
+
+    .mob_menu {
+        justify-content: center;
+        flex-flow: wrap;
     }
 
     .footer_landscape {
@@ -66,6 +85,7 @@
 
     .tel {
         font-size: larger;
+        justify-content: center;
     }
 
     .text_description_title {
@@ -89,9 +109,11 @@
     .card_button {
         margin-left: 0;
     }
-.bordered {
-    padding: 0 10px;
-}
+
+    .bordered {
+        padding: 0 10px;
+    }
+
     .buy_button {
         font-size: small;
         padding: 10px 5%;
@@ -142,11 +164,6 @@
     .side_menu {
         color: white;
         text-align: center
-    }
-
-    .mob_menu {
-        justify-content: space-between;
-        flex-flow: wrap;
     }
 
     .menu__item:hover {
