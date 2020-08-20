@@ -30,6 +30,15 @@ body {
 .modal_logo {
     width: 50%;
 }
+
+.modal_text {
+    height: 6vh;
+}
+.modal_centerBtn {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .modal_input {
     width: 86%;
     padding: 10px;
@@ -37,11 +46,13 @@ body {
     border-radius: 30px;
     border: 1px solid lightgrey;
 }
+
 .modal_btn {
     margin-top: 15px;
     padding: 10px;
     border: transparent;
 }
+
 .close {
     width: 30px;
     height: 30px;
@@ -57,11 +68,25 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
 @media (max-width: 376px) {
     .modal-content {
-        width: 45%;
+        width: 73%;
     }
     .modal {
         padding-top: 20%;
+    }
+}
+@media (max-width: 628px) {
+    .modal-content {
+        width: 70%;
+    }
+    .modal {
+        padding-top: 20%;
+    }
+}
+@media (max-width: 1120px) {
+    .modal-content {
+        width: 45%;
     }
 }

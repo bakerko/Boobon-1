@@ -14,9 +14,11 @@
     .footer_landscape {
         flex-flow: column;
     }
-.big_container {
-    font-size: smaller;
-}
+
+    .big_container {
+        font-size: smaller;
+    }
+
     .radio_inline > p {
         margin: 0;
     }
@@ -36,6 +38,7 @@
     .mob_menu {
         width: 100%;
     }
+
     .mob_menu > li {
         padding: 10px;
     }
@@ -57,10 +60,6 @@
         color: silver;
     }
 
-    .menu__box li {
-        padding-bottom: 10px;
-    }
-
     .mobile_only {
         display: block;
     }
@@ -73,10 +72,6 @@
     .close_image_mob {
         height: 15px;
         width: 15px;
-    }
-
-    .tablet_total {
-        width: 90%;
     }
 
     .delivery_form {

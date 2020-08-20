@@ -57,8 +57,8 @@
     }
 
     .tablet_total {
-        width: 95%;
-        margin-bottom: 30px;
+        width: 85%;
+        margin: auto auto 30px;
     }
 
     .cart_box {
@@ -76,10 +76,6 @@
 
     .footer_landscape {
         flex-flow: wrap;
-    }
-
-    .footer_landscape_item {
-        width: 50%;
     }
 
     .table_input {

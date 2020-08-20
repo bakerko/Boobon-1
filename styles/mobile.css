@@ -32,11 +32,27 @@
     .mobile_grid {
         display: grid;
     }
+    .mobile_only {
+        display: block;
+    }
 
     .flex_wrap {
         width: auto;
         display: inline-flex;
         justify-content: center;
+    }
+    .dev_title {
+        text-align: center;
+        font-size: 16px;
+    }
+    .dev_img {
+        margin: 50px auto;
+        display: table;
+
+    }
+    .dog {
+        width: 155px;
+        height: auto;
     }
 
     .none {
@@ -54,6 +70,7 @@
 
     .mob_title {
         padding-top: 0;
+        font-size: 16px
     }
 
     .mob_menu {
@@ -61,9 +78,15 @@
         flex-flow: wrap;
     }
 
+    .mob_menu > li {
+        padding: 10px;
+    }
+
     .footer_landscape {
-        flex-flow: column;
         padding-top: 20px;
+    }
+    .footer_landscape_item {
+        width: 100%;
     }
 
     .pos_relative {
@@ -78,6 +101,9 @@
         top: -39px;
     }
 
+    .footer_link {
+        width: max-content;
+    }
     .baloon_small {
         width: 228px;
         height: auto;

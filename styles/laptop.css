@@ -2,36 +2,53 @@
     .product_photo {
         width: 210px;
     }
+
     .adaptive_float {
         float: right;
     }
+
     section {
         width: 100%;
         float: none;
     }
+
+    .blackbar {
+        font-size: 14px;
+    }
+
+    .mob_title {
+        font-size: 16px;
+    }
+
     .text_description {
         margin-bottom: 30px;
     }
+
     .right {
         margin-top: -35px;
     }
+
     .span1 {
         padding: 0 20px;
     }
+
     .box_laptop {
         padding: 10px 5%;
     }
+
     .radio_inline {
         display: inline-block;
         line-height: 2rem;
     }
+
     .table_input {
         width: 80%;
     }
+
     .tablet_total {
-        width: 50%;
         padding: 20px;
     }
+
     .big_container {
         width: 90%;
     }
