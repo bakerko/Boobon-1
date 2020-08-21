@@ -22,7 +22,7 @@ body {
     text-align: center;
     padding: 20px;
     border: 1px solid #888;
-    width: 25%;
+    width: 30%;
     height: max-content;
     position: relative;
 }
@@ -69,24 +69,31 @@ body {
     cursor: pointer;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 1120px) {
     .modal-content {
-        width: 73%;
-    }
-    .modal {
-        padding-top: 20%;
+        width: 55%;
     }
 }
 @media (max-width: 628px) {
     .modal-content {
-        width: 70%;
+        width: 68%;
     }
     .modal {
         padding-top: 20%;
     }
 }
-@media (max-width: 1120px) {
+@media (max-width: 376px) {
     .modal-content {
-        width: 45%;
+        width: 68%;
+    }
+
+    .close {
+        width: 25px;
+        height: 25px;
+        right: -26px;
+    }
+
+    .modal {
+        padding-top: 20%;
     }
 }

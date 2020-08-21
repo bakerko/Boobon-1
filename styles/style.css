@@ -139,11 +139,13 @@ a {
     font-size: 30px;
     text-transform: uppercase;
 }
+
 .dev_img {
     margin: 50px auto;
     display: table;
 
 }
+
 .dog {
     width: 300px;
     height: auto;
@@ -300,6 +302,64 @@ ul {
 .footer {
     padding: 0 0 40px;
     background-color: black;
+}
+
+.check_item {
+    margin: 20px;
+}
+
+.main_modalBtn {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.topmenu li a:hover {
+    color: #D5B45B;
+}
+
+.submenu-link:after {
+    content: "\f107";
+    color: inherit;
+    margin-left: 10px;
+}
+
+.submenu_link {
+    position: relative;
+}
+
+.submenu {
+    margin-left: 28px;
+    background: black;
+    z-index: 5;
+    width: 175px;
+    margin-top: 15px;
+    opacity: 1;
+    top: 56px;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+}
+
+.submenu li {
+    padding: 14px;
+}
+
+.submenu a {
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.submenu li:last-child a {
+    border-bottom: none;
+}
+
+.topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
 }
 
 .title {

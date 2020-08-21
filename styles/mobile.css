@@ -66,6 +66,7 @@
     .aside {
         font-size: initial;
         padding: 0 30px 30px;
+        width: auto;
     }
 
     .mob_title {

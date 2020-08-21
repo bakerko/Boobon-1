@@ -30,6 +30,12 @@
     .wrapper {
         grid-template-columns: 1fr 1fr;
     }
+    .submenu {
+        width: 140px;
+    }
+    .submenu a {
+        font-size: 10px;
+    }
 
     .landscape_view {
         flex-flow: wrap;

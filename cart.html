@@ -40,26 +40,34 @@
                 <input class="form-control" type="text" aria-label="Search">
                 <img class="search_img" src="images/search.png"/>
             </div>
-            <a href="#"><div class="cart_box">
-                <img class="cart" src="images/Cart.png" height="450" width="450"/>
-                <p><b>: 2000 грн</b></p>
-            </div>
+            <a href="#">
+                <div class="cart_box">
+                    <img class="cart" src="images/Cart.png" height="450" width="450"/>
+                    <p><b>: 2000 грн</b></p>
+                </div>
             </a>
         </div>
     </div>
-    <div  id="myBtn_side" class="mobile_only modal_centerBtn"><a class="button colorblack" href="#"> Оформить мероприятие</a>
+    <div id="myBtn_side" class="mobile_only modal_centerBtn"><a class="button colorblack" href="#"> Оформить
+        мероприятие</a>
     </div>
     <nav class="navbar">
-        <ul class="blackbar container">
+        <ul class="blackbar topmenu container">
             <li><a class="blackbar__item" href="#"><img class="nav_icon" src="./images/ballon.svg"> Латексные шары</a>
             </li>
             <li><a class="blackbar__item" href="#"><img class="nav_icon" src="./images/balloon heart.png"/>
                 Фольгированные шары</a></li>
             <li><a class="blackbar__item" href="#"><img class="nav_icon" src="./images/Celebrate.png"/> Товары для
                 праздника</a></li>
-            <li><a class="blackbar__item" href="#"><img class="nav_icon star" src="./images/star.svg"/> Готовые решения</a>
+            <li><a class="blackbar__item submenu_link" href="#"><img class="nav_icon star" src="./images/star.svg"/>
+                Готовые решения</a><i class="fa fa-angle-down"></i>
+                <ul class="submenu">
+                    <li><a href="">Воздушные шары</a></li>
+                    <li><a href="">Товары для праздника</a></li>
+                </ul>
             </li>
-            <li id="myBtn" class="btn ipad_button"><a class="blackbar__item button colorblack" href="#"> Оформить мероприятие</a>
+            <li id="myBtn" class="btn ipad_button"><a class="blackbar__item button colorblack" href="#"> Оформить
+                мероприятие</a>
             </li>
         </ul>
         <div id="myModal" class="modal">
@@ -70,11 +78,12 @@
                 <form action="">
                     <input class="modal_input" type="text" id="name" name="name" placeholder="Ваше имя">
                     <input class="modal_input" type="text" id="tel" name="tel" placeholder="Ваш телефон">
-                    <input class="modal_input modal_text" type="text" id="text" name="text" placeholder="Текст Текст текст какой-то текст ...............">
+                    <input class="modal_input modal_text" type="text" id="text" name="text"
+                           placeholder="Текст Текст текст какой-то текст ...............">
                     <button class="black_button modal_btn">Заказать оформление</button>
                 </form>
             </div>
-            <script src="js/modal.js"></script>
+
         </div>
         <div id="mySidenav" class="mobile_only sidenav ">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -97,7 +106,7 @@
             <p class="center mob_title">КОНФЕТТИ ГЛИТТЕР СЕРЕБРО</p>
             <div class="amount">
                 <span class="down">-</span>
-                <input type="text" value="1" />
+                <input type="text" value="1"/>
                 <span class="up">+</span>
             </div>
 
@@ -110,9 +119,16 @@
             <div class="price float_right"><b>1,32 грн</b></div>
             <button id="checkout" class="button black_button">ОФОРМИТЬ ЗАКАЗ</button>
             <button class="button white_button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-
         </div>
     </div>
+    <form action="">
+        <input class="check_item" type="checkbox" name="check1" value="checked1" checked>Даю согласие на хранение и
+        обработку моих персональных данных
+        (или длугой текст)<br>
+        <input class="check_item" type="checkbox" name="check2" value="checked2">Даю согласие на получение рекламной
+        рассылки (или длугой
+        текст)
+    </form>
 </main>
 <footer class="footer">
     <div class="flexbox container footer_landscape">
@@ -126,11 +142,12 @@
         <ul class="footer_landscape_item">
             <li class="title">КОМПАНИЯ</li>
             <li class="footer_link"><a class="blackbar__item" href="">О нас</a></li>
-            <li class="footer_link"><a class="blackbar__item" href="">Реквизиты</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Контакты</a></li>
         </ul>
         <ul class="footer_landscape_item">
             <li class="title">КОНТАКТЫ</li>
-            <li class="footer_link"><a class="blackbar__item" href=""><i class="fas fa-phone"></i> +38 (063)
+            <li class="footer_link"><a class="blackbar__item" href="tel:+38 (096) 207 84 83"><i
+                    class="fas fa-phone"></i> +38 (063)
                 000-00-00</a></li>
             <li class="footer_link"><a class="blackbar__item" href=""><i class="fas fa-envelope"></i> shop@shop.com</a>
             </li>
@@ -153,6 +170,6 @@
         </ul>
     </div>
 </footer>
-
+<script src="js/modal.js"></script>
 </body>
 </html>
