@@ -12,7 +12,6 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -34,6 +33,7 @@ body {
 .modal_text {
     height: 6vh;
 }
+
 .modal_centerBtn {
     margin-bottom: 20px;
     text-align: center;
@@ -51,6 +51,11 @@ body {
     margin-top: 15px;
     padding: 10px;
     border: transparent;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
 }
 
 .close {
@@ -74,14 +79,17 @@ body {
         width: 55%;
     }
 }
+
 @media (max-width: 628px) {
     .modal-content {
         width: 68%;
     }
+
     .modal {
         padding-top: 20%;
     }
 }
+
 @media (max-width: 376px) {
     .modal-content {
         width: 68%;
