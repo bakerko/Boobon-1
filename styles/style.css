@@ -372,6 +372,7 @@ ul {
     padding: 5px 0;
     color: white;
     position: relative;
+    cursor: pointer;
 }
 
 .colored_icon {
@@ -391,6 +392,7 @@ ul {
 
 .chat {
     filter: invert(100%);
+    cursor: pointer;
 }
 
 .width70 {

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/mobile_320.css">
     <script src="js/sidebar.js"></script>
     <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/chat.css">
 </head>
 
 <body>
@@ -465,12 +466,31 @@
             <li class="footer_link"><a class="blackbar__item" href=""><img class="colored_icon"
                                                                            src="./images/telegram.svg" alt=""><span
                     class="goToInsta">Telegram</span></a></li>
-            <li class="footer_link"><a class="blackbar__item" href=""><img class="colored_icon chat"
+            <li  id="myBtn_chat" class="footer_link"><a class="blackbar__item" href=""><img class="colored_icon chat"
                                                                            src="./images/chat.png" alt=""><span
                     class="goToInsta">Чат на сайте</span></a></li>
         </ul>
     </div>
+    <div id="myChat" class="modal">
+
+        <div class="modal-content chat-width">
+            <span><img class="close close_left" src="./images/close.png" alt=""></span>
+            <form action="" class="form-container">
+                <p class="msg"><b><label for="msg"></label>Напишите Ваше сообщение</b></p><br>
+                <p class="msg"><label for="msg"></label>Операторы online!</p>
+                <div class="chat-area"></div>
+                <textarea placeholder="Введите сообщение..." name="msg" id="msg" required></textarea>
+
+                <button class="send_button" type="submit"><i class="fas fa-arrow-circle-up"></i></button>
+            </form>
+            <div class="icons">
+                <img class="smile" src="images/smile.png" height="280" width="277"/>
+                <img class="pin" src="images/pin.png" height="317" width="170"/>
+            </div>
+        </div>
+    </div>
 </footer>
 <script src="js/modal.js"></script>
+<script src="js/chat.js"></script>
 </body>
 </html>
