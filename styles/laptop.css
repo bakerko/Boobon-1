@@ -24,6 +24,18 @@
         margin-bottom: 30px;
     }
 
+    .submenu {
+        width: 145px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .submenu a {
+        font-size: 12px;
+    }
+
     .right {
         margin-top: -35px;
     }
@@ -34,6 +46,10 @@
 
     .box_laptop {
         padding: 10px 5%;
+    }
+
+    .product_photo_item {
+    width: 195px;
     }
 
     .radio_inline {

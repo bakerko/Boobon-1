@@ -333,7 +333,7 @@ ul {
     margin-left: 28px;
     background: black;
     z-index: 5;
-    width: 175px;
+    width: 191px;
     margin-top: 15px;
     opacity: 1;
     top: 56px;
@@ -574,9 +574,17 @@ ul {
 
 .card_button {
     margin-top: 0;
-    padding: 5px 5%;
+    padding: 5px 4%;
     margin-left: 10px;
     font-size: 12px;
+}
+
+.submenu_side {
+    padding-left: 40px;
+}
+.submenu_side li a {
+    font-size: smaller;
+    color: #D4ACB5;
 }
 
 .sm {
