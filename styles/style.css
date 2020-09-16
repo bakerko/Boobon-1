@@ -198,6 +198,10 @@ a {
     cursor: pointer;
 }
 
+.cart_item {
+    margin-bottom: 10px;
+}
+
 .navbar {
     height: 45px;
     background-color: black;
@@ -264,14 +268,6 @@ a {
 
 }
 
-.table {
-    border: 1px solid lightgray;
-    border-radius: 3px;
-    margin: auto;
-    margin-top: 40px;
-    width: 1110px;
-}
-
 .bordered {
     border: 1px solid lightgray;
     padding: 5px 20px;
@@ -332,14 +328,14 @@ ul {
 .submenu {
     margin-left: 28px;
     background: black;
-    z-index: 5;
+    z-index: 1001;
     width: 191px;
     margin-top: 15px;
-    opacity: 1;
-    top: 56px;
+    height: 0;
     transform: scaleY(0);
     transform-origin: 0 0;
     transition: .5s ease-in-out;
+    position: absolute;
 }
 
 .submenu li {
@@ -358,7 +354,8 @@ ul {
 }
 
 .topmenu > li:hover .submenu {
-    opacity: 1;
+    visibility: visible;
+    height: initial;
     transform: scaleY(1);
 }
 
@@ -582,6 +579,7 @@ ul {
 .submenu_side {
     padding-left: 40px;
 }
+
 .submenu_side li a {
     font-size: smaller;
     color: #D4ACB5;
