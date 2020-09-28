@@ -1,0 +1,52 @@
+.navbar {
+    height: unset;
+    padding: 15px 0;
+}
+.main_sort {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 0;
+}
+.categoty {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: medium;
+}
+.categoty:hover {
+    color: #a291a5;
+}
+.description {
+    font-weight: normal;
+}
+.aside {
+    width: 14%;
+    padding: 0 25px 25px;
+    margin: 0 10px 0 0;
+}
+.color {
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+}
+.main_sort {
+    background-color: #f9f8f8;
+}
+.beige {
+    background-color: #f9f8f8;
+}
+.choice {
+    display: block;
+}
+.input {
+    border-radius: 5px;
+    width: 70%;
+    padding: 5px;
+}
+.black_button {
+    margin: 30px;
+    display: block;
+    font-size: large;
+    width: auto;
+    border-radius: 5px;
+}

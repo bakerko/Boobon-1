@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="../styles/laptop.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <link rel="stylesheet" href="../styles/tablet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="../styles/tablet_portrait.css">
+    <link rel="stylesheet" href="../styles/mobile_320.css">
+    <script src="../js/sidebar.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/admin_styles.css">
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="search_block">
+        <div class="container flexbox flex_mob">
+            <div><a href="/home/"><img class="logo" src="../images/logo.jpg"></a></div>
+
+        </div>
+    </div>
+</header>
+
+
+<br>
+<nav class="navbar">
+    <ul class="blackbar topmenu container">
+        <li><a class="blackbar__item" href="/home/admin_product">Товары</a>
+        </li>
+        <li><a class="blackbar__item" href="/home/admin_decoration">Заказать оформление</a>
+        </li>
+        <li><a class="blackbar__item" href="/home/admin_filter">Фильтры</a>
+        </li>
+        <li><a class="blackbar__item submenu_link" href="/home/admin_product_mix">Сборные товары</a>
+        </li>
+        <li><a class="blackbar__item" href="/home/admin_chat">Сообщения (чат)</a>
+        </li>
+        <li><a class="blackbar__item submenu_link" href="/home/admin_orders">Заказы</a>
+        </li>
+
+    </ul>
+</nav>
+<div class="main_sort">
+    <select class="categoty" name="category">
+        <option value="1">Все категории</option>
+        <option value="1">Латексные</option>
+        <option value="1">Коробки</option>
+    </select>
+    <select class="categoty" name="category">
+        <option value="1">Все</option>
+        <option value="1">Удаленные</option>
+        <option value="1">Принятые</option>
+    </select>
+    <select class="categoty" name="category">
+        <option value="1">Дата по возрастанию</option>
+        <option value="1">Дата по убыванию</option>
+        <option value="1">Цена по возрастанию</option>
+        <option value="1">Цена по убыванию</option>
+        <option value="1">Название по возрастанию</option>
+        <option value="1">Название по убыванию</option>
+    </select>
+</div>
+
+<main class="container">
+
+
+    <form method="post" action="/home/product_add" enctype="multipart/form-data">
+
+<!--            <tr>-->
+<!--                <td>Название</td>-->
+<!--                <td><input type="text" name="name"></td>-->
+<!--                <td>Описание</td>-->
+<!--                <td><input type="text" name="descr"></td>-->
+<!--                <td>Цена</td>-->
+<!--                <td><input type="text" name="price"></td>-->
+<!--                <td>Размер</td>-->
+<!--                <td><input type="text" name="size"></td>-->
+<!--                <td>Материал</td>-->
+<!--                <td><input type="text" name="material"></td>-->
+<!--                <td>Страна</td>-->
+<!--                <td><input type="text" name="country"></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td><input type="file" name="image1" id="fileToUpload"></td>-->
+<!--                <td><input type="file" name="image2" id="fileToUpload"></td>-->
+<!--                <td><input type="file" name="image3" id="fileToUpload"></td>-->
+<!--                <td><input type="file" name="image4" id="fileToUpload"></td>-->
+<!--            </tr>-->
+
+                    <select class="categoty" name="category">
+                        <option value="21">Круглые шары без рисунка</option>
+                        <option value="22">Шары с принтом</option>
+                        <option value="23">Конфетти</option>
+                        <option value="24">Агаты</option>
+                        <option value="25">Браш</option>
+                        <option value="26">Звезды, сердца, круги</option>
+                        <option value="27">Цифры</option>
+                        <option value="28">Шары гиганты, баблс, сферы</option>
+                        <option value="29">Большие фигуры из фольги</option>
+                        <option value="30">Ходячие фигуры</option>
+                        <option value="31">Надписи и фигуры</option>
+                        <option value="32">Коробки с шарами</option>
+                        <option value="33">Гирлянды</option>
+                        <option value="34">Свечи в торт</option>
+                        <option value="35">Колпачки/короны</option>
+                        <option value="36">Открытки</option>
+                        <option value="37">Подарочные пакеты</option>
+                        <option value="38">Сервировка</option>
+                        <option value="39">Готовые решения. Воздушные шары</option>
+                        <option value="40">Готовые решения. Товары для праздника</option>
+                    </select>
+
+
+        <input type="file" name="image4" id="fileToUpload">
+
+    </form>
+    <form action="">
+        <p class="choice">Название </p><input class="fullWidth input" type="text" name="name">
+        <p class="choice">Описание</p><input class="fullWidth input" type="text" name="description">
+        <p class="choice">Цена</p></legend><input class="fullWidth input" type="text" name="price">
+        <p class="choice">Размер</p></legend><input class="fullWidth input" type="text" name="size">
+        <p class="choice">Материал</p></legend><input class="fullWidth input" type="text" name="material">
+        <p class="choice">Страна</p></legend><input class="fullWidth input" type="text" name="country">
+        <button class="button black_button" type="submit" name="submit" value="Добавить">Добавить</button>
+    </form>
+
+    <aside class="aside sidebar" id="filter_open">
+        <form action="">
+            <p class="card-description"><b>ФОРМА ШАРА</b></p>
+
+            <hr>
+            <div class="checkbox_filter">
+                <input type="checkbox" id="star" name="star">
+                <label for="star">Звезда</label>
+            </div>
+            <div class="checkbox_filter">
+                <input type="checkbox" id="letter" name="letter">
+                <label for="letter">Буква</label>
+            </div>
+
+            <div class="checkbox_filter">
+                <input type="checkbox" id="horse" name="horse">
+                <label for="horse">Лошадка</label>
+            </div>
+
+            <div class="clear"></div>
+
+            <p class="card-description"><b>ЦВЕТ ШАРА</b></p>
+            <hr>
+
+            <div class="noMargin_flexbox">
+                <div class="color color-red"></div>
+                <div class="color color-yellow"></div>
+                <div class="color color-orange"></div>
+                <div class="color color-violet"></div>
+                <div class="color color-black"></div>
+                <div class="color color-darkviolet"></div>
+                <div class="color color-white"></div>
+            </div>
+            <p class="card-description"><b>РАЗМЕР</b></p>
+            <hr>
+            <div class="noMargin_flexbox checkbox_filter">
+                <div>
+                    <input type="checkbox" id="sm45" name="sm45">
+                    <label for="sm45">45 см</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="sm80" name="sm80">
+                    <label for="sm80">80 см</label>
+                </div>
+            </div>
+            <div class="noMargin_flexbox checkbox_filter">
+                <div>
+                    <input type="checkbox" id="sm25" name="sm25">
+                    <label for="sm25">25 см</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="sm40" name="sm40">
+                    <label for="sm40">40 см</label>
+                </div>
+            </div>
+
+            <p class="card-description"><b>ДЛЯ КОГО</b></p>
+            <hr>
+            <div class="checkbox_filter">
+                <input type="checkbox" id="man" name="man"
+                       checked>
+                <label for="man">Парню</label>
+            </div>
+
+            <div class="checkbox_filter">
+                <input type="checkbox" id="woman" name="woman">
+                <label for="woman">Девушке</label>
+            </div>
+
+            <p class="card-description"><b>РАЗНОЕ ДРУГОЕ</b></p>
+            <hr>
+
+            <div class="checkbox_filter">
+                <input type="checkbox" id="baby" name="baby">
+                <label for="baby">На выписку</label>
+            </div>
+
+            <div class="checkbox_filter">
+                <input type="checkbox" id="wedding" name="wedding">
+                <label for="wedding">Свадьба</label>
+            </div>
+
+            <div class="checkbox_filter">
+                <input type="checkbox" id="bridal" name="bridal">
+                <label for="bridal">Девичник</label>
+            </div>
+            <div class="checkbox_filter">
+                <input type="checkbox" id="bd" name="bd">
+                <label for="bd">День рождения</label>
+            </div>
+        </form>
+    </aside>
+
+    <div>
+
+        <div class="tablet_cart cart_item">
+            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
+                <p class="center mob_title">Шарик обычный пдшрпдрнадгадщ</p>
+                <p class="center mob_title">Шарик обычный пдшрпдрпадндгадщ</p>
+
+                <div>
+                    <i class="fas fa-pencil-alt close_image"></i>
+                    <i class="far fa-times-circle close_image"></i>
+                </div>
+            </div>
+        </div>
+        <div class="tablet_cart cart_item">
+            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
+                <p class="center mob_title">Шарик обычный пдшрпдрнадгадщ</p>
+                <p class="center mob_title">Шарик обычный пдшрпдрпадндгадщ</p>
+
+                <div>
+                    <i class="fas fa-pencil-alt close_image"></i>
+                    <i class="far fa-times-circle close_image"></i>
+                </div>
+            </div>
+        </div>
+        <div class="tablet_cart cart_item">
+            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
+                <p class="center mob_title">Шарик обыкновенный</p>
+                <p class="center mob_title">Шарик обыкновенны</p>
+
+                <div>
+                    <i class="fas fa-pencil-alt close_image"></i>
+                    <i class="far fa-times-circle close_image"></i>
+                </div>
+            </div>
+        </div>
+        <div class="tablet_cart cart_item">
+            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
+                <p class="center mob_title">Шарик обыкновенный</p>
+                <p class="center mob_title">Шарик обыкновенны</p>
+
+                <div>
+                    <i class="fas fa-pencil-alt close_image"></i>
+                    <i class="far fa-times-circle close_image"></i>
+                </div>
+            </div>
+        </div>
+        <div class="tablet_cart cart_item">
+            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
+                <p class="center mob_title">Шарик обыкновенный</p>
+                <p class="center mob_title">Шарик обыкновенны</p>
+                <div>
+                    <i class="fas fa-pencil-alt close_image"></i>
+                    <i class="far fa-times-circle close_image"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+
+<footer class="footer">
+    <div class="flexbox container footer_landscape">
+        <ul class="footer_landscape_item">
+            <li class="title">ПОКУПАТЕЛЯМ</li>
+            <li class="footer_link"><a class="blackbar__item" href="">Доставка и оплата</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Каталог товаров</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Вопросы и ответы</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Гарантия и возврат</a></li>
+        </ul>
+        <ul class="footer_landscape_item">
+            <li class="title">КОМПАНИЯ</li>
+            <li class="footer_link"><a class="blackbar__item" href="">О нас</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Реквизиты</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Программа лояльности</a></li>
+            <li class="footer_link"><a class="blackbar__item" href="">Вакансии</a></li>
+        </ul>
+        <ul class="footer_landscape_item">
+            <li class="title">КОНТАКТЫ</li>
+            <li class="footer_link"><a class="blackbar__item" href=""><i class="fas fa-phone"></i> +38 (063)
+                000-00-00</a></li>
+            <li class="footer_link"><a class="blackbar__item" href=""><i class="fas fa-envelope"></i> shop@shop.com</a>
+            </li>
+            <li class="footer_link insta_link"><a class="blackbar__item button" href=""><img class="colored_icon"
+                                                                                             src="../images/instagram-sketched.png"
+                                                                                             alt=""><span
+                    class="goToInsta">ПЕРЕЙТИ В INSTAGRAM</span> </a></li>
+        </ul>
+        <ul class="footer_landscape_item">
+            <li class="title">ПИШИТЕ НАМ</li>
+            <li class="footer_link"><a class="blackbar__item" href=""><img class="colored_icon"
+                                                                           src="../images/viber.svg" alt=""><span
+                    class="goToInsta">Viber</span></a></li>
+            <li class="footer_link"><a class="blackbar__item" href=""><img class="colored_icon"
+                                                                           src="../images/telegram.svg" alt=""><span
+                    class="goToInsta">Telegram</span></a></li>
+            <li class="footer_link"><a class="blackbar__item" href=""><img class="colored_icon chat"
+                                                                           src="../images/chat.png" alt=""><span
+                    class="goToInsta">Чат на сайте</span></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+</body>
+</html>
