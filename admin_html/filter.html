@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Products to add</title>
+    <title>Admin Filters</title>
 
     <link rel="stylesheet" href="../styles/laptop.css">
     <link rel="stylesheet" href="../styles/mobile.css">
@@ -165,121 +165,23 @@
                 </div>
             </form>
         </aside>
-        <select class="categoty" autofocus name="category">
-            <option selected disabled>Выбрать категорию товара</option>
-            <option value="21">Круглые шары без рисунка</option>
-            <option value="22">Шары с принтом</option>
-            <option value="23">Конфетти</option>
-            <option value="24">Агаты</option>
-            <option value="25">Браш</option>
-            <option value="26">Звезды, сердца, круги</option>
-            <option value="27">Цифры</option>
-            <option value="28">Шары гиганты, баблс, сферы</option>
-            <option value="29">Большие фигуры из фольги</option>
-            <option value="30">Ходячие фигуры</option>
-            <option value="31">Надписи и фигуры</option>
-            <option value="32">Коробки с шарами</option>
-            <option value="33">Гирлянды</option>
-            <option value="34">Свечи в торт</option>
-            <option value="35">Колпачки/короны</option>
-            <option value="36">Открытки</option>
-            <option value="37">Подарочные пакеты</option>
-            <option value="38">Сервировка</option>
-            <option value="39">Готовые решения. Воздушные шары</option>
-            <option value="40">Готовые решения. Товары для праздника</option>
+
+        <p class="choice">Название фильтра (для цвета Hex-код. Пример: #00008b)</p>
+        <input class="input" type="text" name="name">
+
+        <select class="categoty margin_top" name="group_id">
+            <option selected disabled>Выбрать другие параметры фильтрации</option>
+            <option value="1">Размер</option>
+            <option value="2">Цвет</option>
+            <option value="3">Текстура/Материал</option>
+            <option value="4">Для кого</option>
+            <option value="5">Коробки шаров</option>
+            <option value="6">Форма шара</option>
         </select>
-        <div class="photos">
-            <legend>Картинка 1</legend>
-            <input class="fileToLoad" type="file" name="image4" id="fileToUpload">
-            <legend>Картинка 3</legend>
-            <input class="fileToLoad" type="file" name="image4" id="fileToUpload1">
-            <legend>Картинка 2</legend>
-            <input class="fileToLoad" type="file" name="image4" id="fileToUpload2">
-            <legend>Картинка 4</legend>
-            <input class="fileToLoad" type="file" name="image4" id="fileToUpload3">
-        </div>
-        <p class="choice">Название </p><input class="input" type="text" name="name">
-        <p class="choice">Описание</p><input class="input" type="text" name="description">
-        <p class="choice">Цена</p></legend><input class="input" type="text" name="price">
-        <p class="choice">Размер</p></legend><input class="input" type="text" name="size">
-        <p class="choice">Материал</p></legend><input class="input" type="text" name="material">
-        <p class="choice">Страна</p></legend><input class="input" type="text" name="country">
         <button class="button black_button" type="submit" name="submit" value="Добавить">Добавить</button>
     </form>
 
-    <div class="inline-block">
-        <div class="tablet_cart cart_item">
-            <div class="description height beige noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <b class="center  ">Картинка</b>
-                <b class="center ">Название</b>
-                <b class="center ">Описание</b>
 
-                <div class="noMargin_flexbox">
-                    <i class="fas fa-pencil-alt title_icon"></i>
-                    <i class="far fa-times-circle title_icon"></i>
-                </div>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
-                <p class="center mob_title">Шарик обычный пдшрпдрнадгадщ</p>
-                <p class="center mob_title">Шарик обычный пдшрпдрпадндгадщ</p>
-
-                <div>
-                    <i class="fas fa-pencil-alt close_image "></i>
-                    <i class="far fa-times-circle close_image"></i>
-                </div>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
-                <p class="center mob_title">Шарик обычный пдшрпдрнадгадщ</p>
-                <p class="center mob_title">Шарик обычный пдшрпдрпадндгадщ</p>
-
-                <div>
-                    <i class="fas fa-pencil-alt close_image"></i>
-                    <i class="far fa-times-circle close_image"></i>
-                </div>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
-                <p class="center mob_title">Шарик прыдпрдпдыпрдыврпдыврпдобыкновенный</p>
-                <p class="center mob_title">Шарик обыкновенны</p>
-
-                <div>
-                    <i class="fas fa-pencil-alt close_image"></i>
-                    <i class="far fa-times-circle close_image"></i>
-                </div>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
-                <p class="center mob_title">Шарик обыкновенный</p>
-                <p class="center mob_title">Шарик обыкновенны</p>
-
-                <div>
-                    <i class="fas fa-pencil-alt close_image"></i>
-                    <i class="far fa-times-circle close_image"></i>
-                </div>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
-                <p class="center mob_title">Шарик обыкновенный</p>
-                <p class="center mob_title">Шарик обыкновенны</p>
-                <div>
-                    <i class="fas fa-pencil-alt close_image"></i>
-                    <i class="far fa-times-circle close_image"></i>
-                </div>
-            </div>
-        </div>
-    </div>
 </main>
 
 

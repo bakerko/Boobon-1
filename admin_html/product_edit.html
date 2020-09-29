@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Products to add</title>
+    <title>Product Edit</title>
 
     <link rel="stylesheet" href="../styles/laptop.css">
     <link rel="stylesheet" href="../styles/mobile.css">
@@ -68,7 +68,6 @@
 </div>
 
 <main class="container">
-
 
     <form method="post" action="/home/product_add" enctype="multipart/form-data">
         <aside class="aside aside_adm sidebar" id="filter_open">
@@ -198,6 +197,7 @@
             <legend>Картинка 4</legend>
             <input class="fileToLoad" type="file" name="image4" id="fileToUpload3">
         </div>
+        <p class="choice">Код товара </p><input class="input" type="text" name="id">
         <p class="choice">Название </p><input class="input" type="text" name="name">
         <p class="choice">Описание</p><input class="input" type="text" name="description">
         <p class="choice">Цена</p></legend><input class="input" type="text" name="price">
@@ -207,78 +207,24 @@
         <button class="button black_button" type="submit" name="submit" value="Добавить">Добавить</button>
     </form>
 
-    <div class="inline-block">
-        <div class="tablet_cart cart_item">
-            <div class="description height beige noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <b class="center  ">Картинка</b>
-                <b class="center ">Название</b>
-                <b class="center ">Описание</b>
+    <div class="article">
+        <form method="post" action="/home/product_add_to_mix/63">
+            <select class="categoty" name="mix_id">
+                <option value="3">Девичник</option>
+                <option value="4">Мальчишник</option>
+            </select>
 
-                <div class="noMargin_flexbox">
-                    <i class="fas fa-pencil-alt title_icon"></i>
-                    <i class="far fa-times-circle title_icon"></i>
-                </div>
+            <p>Количество:</p>
+            <div class="amount">
+                <span class="down">-</span>
+                <input type="text" value="1"/>
+                <span class="up">+</span>
             </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
-                <p class="center mob_title">Шарик обычный пдшрпдрнадгадщ</p>
-                <p class="center mob_title">Шарик обычный пдшрпдрпадндгадщ</p>
-
-                <div>
-                    <i class="fas fa-pencil-alt close_image "></i>
-                    <i class="far fa-times-circle close_image"></i>
-                </div>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
-                <p class="center mob_title">Шарик обычный пдшрпдрнадгадщ</p>
-                <p class="center mob_title">Шарик обычный пдшрпдрпадндгадщ</p>
-
-                <div>
-                    <i class="fas fa-pencil-alt close_image"></i>
-                    <i class="far fa-times-circle close_image"></i>
-                </div>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
-                <p class="center mob_title">Шарик прыдпрдпдыпрдыврпдыврпдобыкновенный</p>
-                <p class="center mob_title">Шарик обыкновенны</p>
-
-                <div>
-                    <i class="fas fa-pencil-alt close_image"></i>
-                    <i class="far fa-times-circle close_image"></i>
-                </div>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
-                <p class="center mob_title">Шарик обыкновенный</p>
-                <p class="center mob_title">Шарик обыкновенны</p>
-
-                <div>
-                    <i class="fas fa-pencil-alt close_image"></i>
-                    <i class="far fa-times-circle close_image"></i>
-                </div>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a href=""><img class="baloon baloon_small" src="../images/1baloon.png"/></a>
-                <p class="center mob_title">Шарик обыкновенный</p>
-                <p class="center mob_title">Шарик обыкновенны</p>
-                <div>
-                    <i class="fas fa-pencil-alt close_image"></i>
-                    <i class="far fa-times-circle close_image"></i>
-                </div>
-            </div>
-        </div>
+            <button class="button black_button" type="submit" name="submit" value="Добавить товар в сборный">
+                Добавить
+                товар в сборный
+            </button>
+        </form>
     </div>
 </main>
 

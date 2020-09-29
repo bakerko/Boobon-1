@@ -1,52 +1,149 @@
+
 .navbar {
     height: unset;
     padding: 15px 0;
 }
+
 .main_sort {
     display: flex;
     justify-content: space-evenly;
     padding: 35px 0;
 }
+
 .categoty {
     border: 1px solid lightgrey;
     padding: 10px;
+    display: block;
     border-radius: 5px;
     font-size: medium;
 }
-.categoty:hover {
-    color: #a291a5;
-}
+
 .description {
     font-weight: normal;
+    padding: auto;
+    height: 70px;
 }
-.aside {
-    width: 14%;
-    padding: 0 25px 25px;
-    margin: 0 10px 0 0;
+
+.height {
+    max-height: 40px;
 }
+
+.title_icon {
+    padding: 10px 30px;
+}
+
+.small {
+    font-size: smaller;
+}
+
+.aside_adm {
+    width: 25%;
+    padding: 0 33px 28px;
+    margin: 0 126px 0 0;
+}
+
+.center {
+    width: 30%;
+}
+
 .color {
     width: 17px;
     height: 17px;
     border-radius: 3px;
 }
+
 .main_sort {
     background-color: #f9f8f8;
+    padding: 15px 0;
+    margin-bottom: 15px;
 }
-.beige {
-    background-color: #f9f8f8;
-}
+
 .choice {
     display: block;
+    margin: 5px;
 }
+
 .input {
     border-radius: 5px;
-    width: 70%;
+    width: 40%;
     padding: 5px;
 }
+
 .black_button {
-    margin: 30px;
+    margin: 30px 0;
     display: block;
     font-size: large;
     width: auto;
     border-radius: 5px;
+}
+
+.fileToLoad {
+    margin: 10px;
+}
+
+legend {
+    display: contents;
+}
+
+.photos {
+    display: contents;
+}
+
+.to_delete {
+    width: 10%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.margin_top {
+    margin-top: 20px;
+}
+
+.table_line {
+    margin: 20px;
+}
+
+.accepted {
+    width: 2%;
+    margin-top: 30px;
+}
+
+.accepted_noMargin {
+    width: 11%;
+}
+
+.beige {
+    background-color: beige;
+}
+
+.lightbeige {
+    background-color: #f1f1f124;
+}
+
+.article {
+    margin-top: 80px;
+}
+.inline-block {
+    display: inline-block;
+    margin-top: 50px;
+    width: 100%;
+}
+.width20 {
+    width: 19%;
+}
+
+.width27 {
+    width: 27%;
+}
+
+.baloon {
+    width: 45px;
+    height: 45px;
+}
+.close_image {
+    padding: 27px 20px;
+}
+.status {
+    width: 9%;
+    margin-top: 30px;
 }
