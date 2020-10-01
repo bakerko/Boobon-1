@@ -208,22 +208,25 @@
     </form>
 
     <div class="article">
+        <hr>
+        <br>
         <form method="post" action="/home/product_add_to_mix/63">
-            <select class="categoty" name="mix_id">
-                <option value="3">Девичник</option>
-                <option value="4">Мальчишник</option>
-            </select>
-
-            <p>Количество:</p>
-            <div class="amount">
-                <span class="down">-</span>
-                <input type="text" value="1"/>
-                <span class="up">+</span>
+            <div class="noMargin_flexbox">
+                <button class="button black_button no_margin" type="submit" name="submit" value="Добавить товар в сборный">
+                    Добавить
+                    товар в сборный
+                </button>
+                <div >
+                    <p class="input_for_edit">Количество:</p>
+                    <input class="q-ty_edit" type="text" value="1"/>
+                </div >
+                <select class="categoty width20" name="mix_id">
+                    <option value="3">Девичник</option>
+                    <option value="4">Мальчишник</option>
+                </select>
             </div>
-            <button class="button black_button" type="submit" name="submit" value="Добавить товар в сборный">
-                Добавить
-                товар в сборный
-            </button>
+
+
         </form>
     </div>
 </main>

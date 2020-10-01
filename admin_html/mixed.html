@@ -14,6 +14,10 @@
     <script src="../js/sidebar.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/admin_styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -67,133 +71,246 @@
     </select>
 </div>
 <main class="container">
-    <div>
-        <form action="">
-            <p class="choice">Название </p><input class="input" type="text" name="name">
-            <p class="choice">Описание</p><input class="input" type="text" name="description">
-            <button class="button black_button" type="submit" name="submit" value="Добавить">Добавить</button>
+    <div class="adding_prod">
+        <form class="noMargin_flexbox" action="">
+            <p class="">Название </p><input class="edit_input" type="text" name="name">
+            <p class="">Описание</p><input class="edit_input" type="text" name="description">
+            <p class="">Цена</p><input class="edit_input" type="text" name="description">
+            <button class="button black_button no_margin" type="submit" name="submit" value="Добавить">Добавить</button>
         </form>
     </div>
-    <div>
-        <div class="tablet_cart cart_item">
-            <div class="description height beige noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <b class="center  ">ДЕВИЧНИК</b>
-                <b class="center ">ДЛЯ ВЕСЕЛОГО ОТРЫВА</b>
+    <hr>
+    <br>
+    <div id="accordion">
+        <div class=" ">
+            <b class="center  ">ДЕВИЧНИК</b>
+            <b class="center ">ДЛЯ ВЕСЕЛОГО ОТРЫВА</b>
+            <a href="" class="center ">Удалить</a>
 
-                <div class="noMargin_flexbox">
-                    <i class="far fa-times-circle title_icon"></i>
-                </div>
-            </div>
         </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a class="" href=""><img class="baloon " src="../images/products/latex.png"/></a>
-                <p class="center">Шарик обыкновенный</p>
-                <div class="amount">
-                    <span class="down">-</span>
-                    <input type="text" value="1"/>
-                    <span class="up">+</span>
-                </div>
-                <a href="" class="to_delete">Удалить</a>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a class="" href=""><img class="baloon baloon_admin" src="../images/ballon.png"/></a>
-                <p class="center">Шарик обыкновенный необыкновенный розовый</p>
-                <div class="amount">
-                    <span class="down">-</span>
-                    <input type="text" value="1"/>
-                    <span class="up">+</span>
-                </div>
-                <a href="" class="to_delete">Удалить</a>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a class="" href=""><img class="baloon baloon_small" src="../images/products/kids.png"/></a>
-                <p class="center">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
-                <div class="amount">
-                    <span class="down">-</span>
-                    <input type="text" value="1"/>
-                    <span class="up">+</span>
-                </div>
-                <a href="" class="to_delete">Удалить</a>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a class="" href=""><img class="baloon baloon_small" src="../images/balloon%20heart.png"/></a>
-                <p class="center ">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
-                <div class="amount">
-                    <span class="down">-</span>
-                    <input type="text" value="1"/>
-                    <span class="up">+</span>
-                </div>
-                <a href="" class="to_delete">Удалить</a>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="tablet_cart cart_item">
-            <div class="description height beige noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <b class="center  ">МАЛЬЧИШНИК</b>
-                <b class="center ">ДЛЯ ВЕСЕЛОГО ОТРЫВА</b>
+        <div>
+            <!--        <div class="tablet_cart cart_item">-->
+            <!--            <div class="description height beige noMargin_flexbox tablet_description mob_desrc pos_relative">-->
+            <!--                <b class="center  ">ДЕВИЧНИК</b>-->
+            <!--                <b class="center ">ДЛЯ ВЕСЕЛОГО ОТРЫВА</b>-->
 
-                <div class="noMargin_flexbox">
-                    <i class="far fa-times-circle title_icon"></i>
+            <!--                <div class="noMargin_flexbox">-->
+            <!--                    <i class="far fa-times-circle title_icon"></i>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--        </div>-->
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon " src="../images/products/latex.png"/></a>
+                    <p class="center">Шарик обыкновенный</p>
+                    <div class="amount quantity">
+                        <input type="text" value="1">
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
+                </div>
+            </div>
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon baloon_admin" src="../images/ballon.png"/></a>
+                    <p class="center">Шарик обыкновенный необыкновенный розовый</p>
+                    <div class="amount quantity">
+                        <input type="text" value="1">
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
+                </div>
+            </div>
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon baloon_small" src="../images/products/kids.png"/></a>
+                    <p class="center">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
+                    <div class="amount quantity">
+                        <input class="" type="text" value=""/>
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
+                </div>
+            </div>
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon baloon_small" src="../images/balloon%20heart.png"/></a>
+                    <p class="center ">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
+                    <div class="amount quantity">
+                        <input type="text" value="1"/>
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
                 </div>
             </div>
         </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a class="" href=""><img class="baloon " src="../images/products/latex.png"/></a>
-                <p class="center">Шарик обыкновенный</p>
-                <div class="amount">
-                    <span class="down">-</span>
-                    <input type="text" value="1"/>
-                    <span class="up">+</span>
+        <div class="">
+            <b class="center ">МАЛЬЧИШНИК</b>
+            <b class="center ">ТУСИМ ПО КЛУБАМ</b>
+            <a href="" class="center ">Удалить</a>
+        </div>
+        <div>
+            <!--        <div class="tablet_cart cart_item">-->
+            <!--            <div class="description height beige noMargin_flexbox tablet_description mob_desrc pos_relative">-->
+            <!--                <b class="center  ">ДЕВИЧНИК</b>-->
+            <!--                <b class="center ">ДЛЯ ВЕСЕЛОГО ОТРЫВА</b>-->
+
+            <!--                <div class="noMargin_flexbox">-->
+            <!--                    <i class="far fa-times-circle title_icon"></i>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--        </div>-->
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon " src="../images/products/latex.png"/></a>
+                    <p class="center">Шарик обыкновенный</p>
+                    <div class="amount quantity">
+                        <input type="text" value="1">
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
                 </div>
-                <a href="" class="to_delete">Удалить</a>
+            </div>
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon baloon_admin" src="../images/ballon.png"/></a>
+                    <p class="center">Шарик обыкновенный необыкновенный розовый</p>
+                    <div class="amount quantity">
+                        <input type="text" value="1">
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
+                </div>
+            </div>
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon baloon_small" src="../images/products/kids.png"/></a>
+                    <p class="center">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
+                    <div class="amount quantity">
+                        <input class="" type="text" value=""/>
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
+                </div>
+            </div>
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon baloon_small" src="../images/balloon%20heart.png"/></a>
+                    <p class="center ">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
+                    <div class="amount quantity">
+                        <input type="text" value="1"/>
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
+                </div>
             </div>
         </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a class="" href=""><img class="baloon baloon_admin" src="../images/ballon.png"/></a>
-                <p class="center">Шарик обыкновенный необыкновенный розовый</p>
-                <div class="amount">
-                    <span class="down">-</span>
-                    <input type="text" value="1"/>
-                    <span class="up">+</span>
+        <div class="">
+            <b class="center ">ДЕТСКИЙ</b>
+            <b class="center ">С ДРУЗЬЯМИ</b>
+            <a href="" class="center ">Удалить</a>
+        </div>
+        <div>
+            <!--        <div class="tablet_cart cart_item">-->
+            <!--            <div class="description height beige noMargin_flexbox tablet_description mob_desrc pos_relative">-->
+            <!--                <b class="center  ">ДЕВИЧНИК</b>-->
+            <!--                <b class="center ">ДЛЯ ВЕСЕЛОГО ОТРЫВА</b>-->
+
+            <!--                <div class="noMargin_flexbox">-->
+            <!--                    <i class="far fa-times-circle title_icon"></i>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--        </div>-->
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon " src="../images/products/latex.png"/></a>
+                    <p class="center">Шарик обыкновенный</p>
+                    <div class="amount quantity">
+                        <input type="text" value="1">
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
                 </div>
-                <a href="" class="to_delete">Удалить</a>
+            </div>
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon baloon_admin" src="../images/ballon.png"/></a>
+                    <p class="center">Шарик обыкновенный необыкновенный розовый</p>
+                    <div class="amount quantity">
+                        <input type="text" value="1">
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
+                </div>
+            </div>
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon baloon_small" src="../images/products/kids.png"/></a>
+                    <p class="center">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
+                    <div class="amount quantity">
+                        <input class="" type="text" value=""/>
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
+                </div>
+            </div>
+            <div class="tablet_cart cart_item">
+                <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="" href=""><img class="baloon baloon_small" src="../images/balloon%20heart.png"/></a>
+                    <p class="center ">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
+                    <div class="amount quantity">
+                        <input type="text" value="1"/>
+                    </div>
+                    <a href="" class="to_delete">Удалить</a>
+                </div>
             </div>
         </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a class="" href=""><img class="baloon baloon_small" src="../images/products/kids.png"/></a>
-                <p class="center">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
-                <div class="amount">
-                    <span class="down">-</span>
-                    <input type="text" value="1"/>
-                    <span class="up">+</span>
-                </div>
-                <a href="" class="to_delete">Удалить</a>
-            </div>
-        </div>
-        <div class="tablet_cart cart_item">
-            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
-                <a class="" href=""><img class="baloon baloon_small" src="../images/balloon%20heart.png"/></a>
-                <p class="center ">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
-                <div class="amount">
-                    <span class="down">-</span>
-                    <input type="text" value="1"/>
-                    <span class="up">+</span>
-                </div>
-                <a href="" class="to_delete">Удалить</a>
-            </div>
-        </div>
+
+
     </div>
+
+<!--    <div>-->
+<!--&lt;!&ndash;        <div class="tablet_cart cart_item">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="description height beige noMargin_flexbox tablet_description mob_desrc pos_relative">&ndash;&gt;-->
+<!--&lt;!&ndash;                <b class="center  ">ДЕВИЧНИК</b>&ndash;&gt;-->
+<!--&lt;!&ndash;                <b class="center ">ДЛЯ ВЕСЕЛОГО ОТРЫВА</b>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <div class="noMargin_flexbox">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="far fa-times-circle title_icon"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--        <div class="tablet_cart cart_item">-->
+<!--            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">-->
+<!--                <a class="" href=""><img class="baloon " src="../images/products/latex.png"/></a>-->
+<!--                <p class="center">Шарик обыкновенный</p>-->
+<!--                <div class="amount quantity">-->
+<!--                    <input type="text" value="1">-->
+<!--                </div>-->
+<!--                <a href="" class="to_delete">Удалить</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="tablet_cart cart_item">-->
+<!--            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">-->
+<!--                <a class="" href=""><img class="baloon baloon_admin" src="../images/ballon.png"/></a>-->
+<!--                <p class="center">Шарик обыкновенный необыкновенный розовый</p>-->
+<!--                <div class="amount quantity">-->
+<!--                    <input type="text" value="1">-->
+<!--                </div>-->
+<!--                <a href="" class="to_delete">Удалить</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="tablet_cart cart_item">-->
+<!--            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">-->
+<!--                <a class="" href=""><img class="baloon baloon_small" src="../images/products/kids.png"/></a>-->
+<!--                <p class="center">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>-->
+<!--                <div class="amount quantity">-->
+<!--                    <input class="" type="text" value=""/>-->
+<!--                </div>-->
+<!--                <a href="" class="to_delete">Удалить</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="tablet_cart cart_item">-->
+<!--            <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">-->
+<!--                <a class="" href=""><img class="baloon baloon_small" src="../images/balloon%20heart.png"/></a>-->
+<!--                <p class="center ">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>-->
+<!--                <div class="amount quantity">-->
+<!--                    <input type="text" value="1"/>-->
+<!--                </div>-->
+<!--                <a href="" class="to_delete">Удалить</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
 </main>
 
 
@@ -239,6 +356,10 @@
     </div>
 </footer>
 
-
+<script>
+    $(function () {
+        $("#accordion").accordion();
+    });
+</script>
 </body>
 </html>

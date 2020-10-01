@@ -14,6 +14,8 @@
     <script src="../js/sidebar.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/admin_styles.css">
+
+    <script src="../js/openlink.js"></script>
 </head>
 
 <body>
@@ -78,8 +80,8 @@
                 <b class="center accepted_noMargin">Удалён</b>
             </div>
         </div>
-        <div class="tablet_cart cart_item">
-            <div class="description lightbeige noMargin_flexbox ">
+        <div class="tablet_cart cart_item " onclick="addItem('order1');">
+            <div class="description lightbeige noMargin_flexbox pointer">
                 <p class="center">12.08.2020</p>
                 <p class="center">Евгений Никутин</p>
                 <p class="center">+380684155622</p>
@@ -87,8 +89,17 @@
                 <p class="center accepted_noMargin">Нет</p>
             </div>
         </div>
+        <div class="tablet_cart cart_item " onclick="addItem('order2');">
+            <div class="description lightbeige noMargin_flexbox pointer">
+                <p class="center">12.08.2020</p>
+                <p class="center">Мария Микутин</p>
+                <p class="center">+380684155622</p>
+                <p class="center accepted_noMargin">Принят</p>
+                <p class="center accepted_noMargin">Нет</p>
+            </div>
+        </div>
     </article>
-    <article class="article">
+    <article class="article" >
 <!--        <div class="tablet_cart cart_item">-->
 <!--            <div class="description height beige noMargin_flexbox ">-->
 <!--                <b class="center">Картинка</b>-->
@@ -98,16 +109,14 @@
 <!--                <b class="center accepted_noMargin">Удалить</b>-->
 <!--            </div>-->
 <!--        </div>-->
-        <div>
+        <div id="order1" style="display: none">
             <p class="font_xl">Заказ 1</p>
             <div class="tablet_cart cart_item">
                 <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
                     <a class="" href=""><img class="baloon baloon_small" src="../images/products/latex.png"/></a>
                     <p class="center">Шарик обыкновенный</p>
                     <div class="amount">
-                        <span class="down">-</span>
                         <input type="text" value="1"/>
-                        <span class="up">+</span>
                     </div>
                     <p class="accepted">Принят</p>
                     <a href="" class="to_delete">Удалить</a>
@@ -118,9 +127,7 @@
                     <a class="" href=""><img class="baloon baloon_small" src="../images/ballon.png"/></a>
                     <p class="center">Шарик обыкновенный необыкновенный розовый</p>
                     <div class="amount">
-                        <span class="down">-</span>
                         <input type="text" value="1"/>
-                        <span class="up">+</span>
                     </div>
                     <p class="accepted">Принят</p>
                     <a href="" class="to_delete">Удалить</a>
@@ -131,9 +138,7 @@
                     <a class="" href=""><img class="baloon baloon_small" src="../images/products/kids.png"/></a>
                     <p class="center">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
                     <div class="amount">
-                        <span class="down">-</span>
                         <input type="text" value="1"/>
-                        <span class="up">+</span>
                     </div>
                     <p class="accepted">Принят</p>
                     <a href="" class="to_delete">Удалить</a>
@@ -144,25 +149,21 @@
                     <a class="" href=""><img class="baloon baloon_small" src="../images/balloon%20heart.png"/></a>
                     <p class="center ">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
                     <div class="amount">
-                        <span class="down">-</span>
                         <input type="text" value="1"/>
-                        <span class="up">+</span>
                     </div>
                     <p class="accepted">Принят</p>
                     <a href="" class="to_delete">Удалить</a>
                 </div>
             </div>
         </div>
-        <div>
+        <div id="order2" style="display: none">
             <p class="font_xl">Заказ 2</p>
             <div class="tablet_cart cart_item">
                 <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
                     <a class="" href=""><img class="baloon baloon_small" src="../images/products/latex.png"/></a>
                     <p class="center">Шарик обыкновенный</p>
                     <div class="amount">
-                        <span class="down">-</span>
                         <input type="text" value="1"/>
-                        <span class="up">+</span>
                     </div>
                     <p class="accepted">Принят</p>
                     <a href="" class="to_delete">Удалить</a>
@@ -173,9 +174,7 @@
                     <a class="" href=""><img class="baloon baloon_small" src="../images/ballon.png"/></a>
                     <p class="center">Шарик обыкновенный необыкновенный розовый</p>
                     <div class="amount">
-                        <span class="down">-</span>
                         <input type="text" value="1"/>
-                        <span class="up">+</span>
                     </div>
                     <p class="accepted">Принят</p>
                     <a href="" class="to_delete">Удалить</a>
@@ -186,9 +185,7 @@
                     <a class="" href=""><img class="baloon baloon_small" src="../images/products/kids.png"/></a>
                     <p class="center">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
                     <div class="amount">
-                        <span class="down">-</span>
                         <input type="text" value="1"/>
-                        <span class="up">+</span>
                     </div>
                     <p class="accepted">Принят</p>
                     <a href="" class="to_delete">Удалить</a>
@@ -199,9 +196,7 @@
                     <a class="" href=""><img class="baloon baloon_small" src="../images/balloon%20heart.png"/></a>
                     <p class="center ">Ещё какой-то шарик обыкновенный необыкновенный розовый</p>
                     <div class="amount">
-                        <span class="down">-</span>
                         <input type="text" value="1"/>
-                        <span class="up">+</span>
                     </div>
                     <p class="accepted">Принят</p>
                     <a href="" class="to_delete">Удалить</a>
@@ -256,6 +251,6 @@
     </div>
 </footer>
 
-
+<script src="../js/openlink.js"></script>
 </body>
 </html>

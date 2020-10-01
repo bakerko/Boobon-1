@@ -12,7 +12,7 @@
 
 .categoty {
     border: 1px solid lightgrey;
-    padding: 10px;
+    padding: 7px;
     display: block;
     border-radius: 5px;
     font-size: medium;
@@ -94,7 +94,9 @@ legend {
     margin-top: 30px;
     cursor: pointer;
 }
-
+.no_margin {
+    margin: 0;
+}
 .margin_top {
     margin-top: 20px;
 }
@@ -119,7 +121,22 @@ legend {
 .lightbeige {
     background-color: #f1f1f124;
 }
+.input_for_edit {
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+}
+.adding_prod {
+    margin-bottom: 20px;
+}
 
+.q-ty_edit {
+    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    font-size: large;
+    padding: 10px;
+}
 .article {
     margin-top: 80px;
 }
@@ -146,4 +163,25 @@ legend {
 .status {
     width: 9%;
     margin-top: 30px;
+}
+.fa-times-circle {
+    cursor: pointer;
+}
+.quantity {
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+}
+.edit_input {
+    width: 20%;
+    height: 22px;
+    padding: 7px 5px;
+    border-radius: 4px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.width70 {
+min-width: 60%;
 }
