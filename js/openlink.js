@@ -9,7 +9,7 @@ function openbox(id,toggler){
     }
 }
 
-function addItem(id) {
+function showBox(id) {
     let display = document.getElementById(id).style.display;
     if (display==='none') {
         document.getElementById(id).style.display='block';

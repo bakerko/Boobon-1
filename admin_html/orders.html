@@ -80,8 +80,8 @@
                 <b class="center accepted_noMargin">Удалён</b>
             </div>
         </div>
-        <div class="tablet_cart cart_item " onclick="addItem('order1');">
-            <div class="description lightbeige noMargin_flexbox pointer">
+        <div class="tablet_cart cart_item " onclick="showBox('order1');">
+            <div class="description bgOrderLine noMargin_flexbox pointer">
                 <p class="center">12.08.2020</p>
                 <p class="center">Евгений Никутин</p>
                 <p class="center">+380684155622</p>
@@ -89,17 +89,8 @@
                 <p class="center accepted_noMargin">Нет</p>
             </div>
         </div>
-        <div class="tablet_cart cart_item " onclick="addItem('order2');">
-            <div class="description lightbeige noMargin_flexbox pointer">
-                <p class="center">12.08.2020</p>
-                <p class="center">Мария Микутин</p>
-                <p class="center">+380684155622</p>
-                <p class="center accepted_noMargin">Принят</p>
-                <p class="center accepted_noMargin">Нет</p>
-            </div>
-        </div>
     </article>
-    <article class="article" >
+    <article >
 <!--        <div class="tablet_cart cart_item">-->
 <!--            <div class="description height beige noMargin_flexbox ">-->
 <!--                <b class="center">Картинка</b>-->
@@ -110,7 +101,6 @@
 <!--            </div>-->
 <!--        </div>-->
         <div id="order1" style="display: none">
-            <p class="font_xl">Заказ 1</p>
             <div class="tablet_cart cart_item">
                 <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
                     <a class="" href=""><img class="baloon baloon_small" src="../images/products/latex.png"/></a>
@@ -156,8 +146,16 @@
                 </div>
             </div>
         </div>
+        <div class="tablet_cart cart_item " onclick="showBox('order2');">
+            <div class="description bgOrderLine noMargin_flexbox pointer">
+                <p class="center">12.08.2020</p>
+                <p class="center">Мария Микутин</p>
+                <p class="center">+380684155622</p>
+                <p class="center accepted_noMargin">Принят</p>
+                <p class="center accepted_noMargin">Нет</p>
+            </div>
+        </div>
         <div id="order2" style="display: none">
-            <p class="font_xl">Заказ 2</p>
             <div class="tablet_cart cart_item">
                 <div class="description noMargin_flexbox tablet_description mob_desrc pos_relative">
                     <a class="" href=""><img class="baloon baloon_small" src="../images/products/latex.png"/></a>
