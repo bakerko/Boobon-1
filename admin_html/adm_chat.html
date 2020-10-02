@@ -68,78 +68,133 @@
     </select>
 </div>
 <main class="container">
-   <div class="noMargin_flexbox table_line">
-       <time datetime="2020-05-12 19:00">12.05.2020</time>
-       <div>Сообщение 1</div>
-       <a href="#" onclick="openbox('box1'); return false">Открыть</a>
-       <div class="width27" id="box1" style="visibility: hidden">Привет. Хочу купить у вас тонну шариков разных там.... красивых и не красивых</div>
+    <aside>
+        <div>
+            <div onclick="showBox ('message1');" class="tablet_cart cart_item pointer">
+                <div class="description height beige noMargin_flexbox tablet_description mob_desrc pos_relative">
+                    <a class="center  ">Развернуть</a>
+                    <b class="center ">12.12.2010</b>
+                    <b class="center ">Сообщение от Васи Пупкина</b>
+                    <div class="noMargin_flexbox">
+                        <i class="far fa-times-circle title_icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="message1" style="display: none">
+                <div class="left_side_chat">
+                    <time datetime="2020-05-12 19:00">12.05.2020</time>
+                    <p class="" id="">Привет. Хочу купить у вас тонну шариков разных там.... красивых и не
+                        красивых</p>
+                </div>
+                <div class="right_side_message">
+                    <form action="/home/message_add/" method="post">
+                        <input type="hidden" name="type" value="1">
+                        <input type="hidden" name="parent_id" value="5">
+                        <time datetime="2020-05-12 19:00">12.05.2020</time>
+                        <p>Да, купите ;orjhn;osdhb;dshb;shb; sfbj</p>
+                    </form>
+                </div>
+                <div class="left_side_chat">
+                    <time datetime="2020-05-12 19:00">12.05.2020</time>
+                    <p class="" >Привет. снова какой-то текст</p>
+                </div>
+                <div class="right_side_message">
+                    <form action="/home/message_add/" method="post">
+                        <input type="hidden" name="type" value="1">
+                        <input type="hidden" name="parent_id" value="5">
+                        <time datetime="2020-05-12 19:00">12.05.2020</time>
+                        <p>Delta compression using up to 8 threads
+                            Compressing objects: 100% (12/12), done.
+                        </p>
+
+                    </form>
+                </div>
+                <div class="clear"></div>
+                <div class="inline-block noMargin_flexbox">
+                    <form class="noMargin_flexbox" action="" method="post">
+                        <textarea autofocus class="chat_textarea" cols="140" rows="5" type="textarea" name="message"></textarea>
+                        <input class="button black_button no_margin" type="submit" name="submit" value="Ответить">
+                    </form>
+                </div>
+            </div>
 
 
-       <div><form action="/home/message_add/" method="post">
-           <input type="hidden" name="type" value="1">
-           <input type="hidden" name="parent_id" value="5">
-           <input type="textarea" name="message">
-           <input type="submit" name="submit" value="Ответить">
-       </form></div>
-       <div><a href="">Удалить</a></div>
-   </div>
-    <div class="noMargin_flexbox table_line">
-         <time datetime="2020-05-13 19:00">13.05.2020</time>
-        <div>Сообщение 2</div>
-        <a href="#" onclick="openbox('box2'); return false">Открыть</a>
-        <div class="width27" id="box2" style="visibility: hidden;">ну и...?</div>
-        <div><form action="/home/message_add/" method="post">
-            <input type="hidden" name="type" value="1">
-            <input type="hidden" name="parent_id" value="5">
-            <input type="textarea" name="message">
-            <input type="submit" name="submit" value="Ответить">
-        </form></div>
-        <div><a href="">Удалить</a></div>
-    </div>
-    <div class="noMargin_flexbox table_line">
-        <div><time datetime="2020-04-20">20.04.2020</time></div>
-        <div>Сообщение 3</div>
-        <div><a href="#" onclick="openbox('box3'); return false">Открыть</a></div>
-        <div class="width27" id="box3" style="visibility: hidden;">чего мне никто не отвечает?</div>
-        <div><form action="/home/message_add/" method="post">
-            <input type="hidden" name="type" value="1">
-            <input type="hidden" name="parent_id" value="5">
-            <input type="textarea" name="message">
-            <input type="submit" name="submit" value="Ответить">
-        </form></div>
-        <div><a href="">Удалить</a></div>
-    </div>
-    <div class="noMargin_flexbox table_line">
-        <div><time datetime="2020-05-14 19:00">14.05.2020</time></div>
-        <div>Сообщение 4</div>
-        <div><a href="#" onclick="openbox('box4'); return false">Открыть</a></div>
-        <div class="width27"  id="box4" style="visibility: hidden">Привет. не, ну а шо?!</div>
-        <div>
-            <form action="/home/message_add/" method="post">
-            <input type="hidden" name="type" value="1">
-            <input type="hidden" name="parent_id" value="5">
-            <input type="textarea" name="message">
-            <input type="submit" name="submit" value="Ответить">
-        </form></div>
-        <div><a href="">Удалить</a></div>
-    </div>
-    <div class="noMargin_flexbox table_line">
-        <div>
-            <time datetime="2020-05-15 19:00">15.05.2020</time>
         </div>
 
-        <div>Сообщение 5</div>
-        <div><a href="#" onclick="openbox('box5'); return false">Открыть</a></div>
-        <div class="width27"  id="box5" style="visibility: hidden;">Привет. Пиво есть?</div>
-        <div>
-            <form action="/home/message_add/" method="post">
-            <input type="hidden" name="type" value="1">
-            <input type="hidden" name="parent_id" value="5">
-            <input type="textarea" name="message">
-            <input type="submit" name="submit" value="Ответить">
-        </form></div>
-        <div><a href="">Удалить</a></div>
-    </div>
+
+    </aside>
+
+
+    <!--            <div class="left_side_chat">-->
+    <!--                <form action="/home/message_add/" method="post">-->
+    <!--                    <input type="hidden" name="type" value="1">-->
+    <!--                    <input type="hidden" name="parent_id" value="5">-->
+    <!--                    &lt;!&ndash;            <input type="textarea" name="message">&ndash;&gt;-->
+
+    <!--                </form>-->
+    <!--            </div>-->
+
+    <!--        <div><a href="">Удалить</a></div>-->
+    <!--    </div>-->
+    <!--        <div class="noMargin_flexbox table_line">-->
+    <!--            <time datetime="2020-05-13 19:00">13.05.2020</time>-->
+    <!--            <div>Сообщение 2</div>-->
+    <!--            <a href="#" onclick="openbox('box2'); return false">Открыть</a>-->
+    <!--            <div class="width27" id="box2" style="visibility: hidden;">ну и...?</div>-->
+    <!--            <div><form action="/home/message_add/" method="post">-->
+    <!--                <input type="hidden" name="type" value="1">-->
+    <!--                <input type="hidden" name="parent_id" value="5">-->
+<!--                    <input type="textarea" name="message">-->
+<!--                    <input type="submit" name="submit" value="Ответить">-->
+    <!--            </form></div>-->
+    <!--            <div><a href="">Удалить</a></div>-->
+    <!--        </div>-->
+    <!--        <div class="noMargin_flexbox table_line">-->
+    <!--            <div><time datetime="2020-04-20">20.04.2020</time></div>-->
+    <!--            <div>Сообщение 3</div>-->
+    <!--            <div><a href="#" onclick="openbox('box3'); return false">Открыть</a></div>-->
+    <!--            <div class="width27" id="box3" style="visibility: hidden;">чего мне никто не отвечает?</div>-->
+    <!--            <div><form action="/home/message_add/" method="post">-->
+    <!--                <input type="hidden" name="type" value="1">-->
+    <!--                <input type="hidden" name="parent_id" value="5">-->
+    <!--                <input type="textarea" name="message">-->
+    <!--                <input type="submit" name="submit" value="Ответить">-->
+    <!--            </form></div>-->
+    <!--            <div><a href="">Удалить</a></div>-->
+    <!--        </div>-->
+    <!--        <div class="noMargin_flexbox table_line">-->
+    <!--            <div><time datetime="2020-05-14 19:00">14.05.2020</time></div>-->
+    <!--            <div>Сообщение 4</div>-->
+    <!--            <div><a href="#" onclick="openbox('box4'); return false">Открыть</a></div>-->
+    <!--            <div class="width27"  id="box4" style="visibility: hidden">Привет. не, ну а шо?!</div>-->
+    <!--            <div>-->
+    <!--                <form action="/home/message_add/" method="post">-->
+    <!--                    <input type="hidden" name="type" value="1">-->
+    <!--                    <input type="hidden" name="parent_id" value="5">-->
+    <!--                    <input type="textarea" name="message">-->
+    <!--                    <input type="submit" name="submit" value="Ответить">-->
+    <!--                </form></div>-->
+    <!--            <div><a href="">Удалить</a></div>-->
+    <!--        </div>-->
+    <!--        <div class="noMargin_flexbox table_line">-->
+    <!--            <div>-->
+    <!--                <time datetime="2020-05-15 19:00">15.05.2020</time>-->
+    <!--            </div>-->
+
+    <!--            <div>Сообщение 5</div>-->
+    <!--            <div><a href="#" onclick="openbox('box5'); return false">Открыть</a></div>-->
+    <!--            <div class="width27"  id="box5" style="visibility: hidden;">Привет. Пиво есть?</div>-->
+    <!--            <div>-->
+    <!--                <form action="/home/message_add/" method="post">-->
+    <!--                    <input type="hidden" name="type" value="1">-->
+    <!--                    <input type="hidden" name="parent_id" value="5">-->
+    <!--                    <input type="textarea" name="message">-->
+    <!--                    <input type="submit" name="submit" value="Ответить">-->
+    <!--                </form></div>-->
+    <!--            <div><a href="">Удалить</a></div>-->
+    <!--        </div>
+    </div>-->
+
 </main>
 
 
