@@ -24,8 +24,8 @@
 }
 
 .send_button {
-    bottom: 10px;
-    right: 0;
+    bottom: 30px;
+    right: 12px;
     border: transparent;
     background: none;
     position: absolute;
@@ -46,9 +46,12 @@
     position: relative;
 }
 
-.form-container textarea {
-    width: 100%;
-    border: transparent;
+textarea {
+    border-radius: 5px;
+    display: block;
+    font-family: inherit;
+    padding: 5px;
+    width: 80%;
 }
 
 .chat_window {
@@ -92,12 +95,27 @@
 }
 
 .form-container .cancel {
-    /*color: black;*/
     cursor: pointer;
 }
 
 .form-container .btn:hover, .open-button:hover {
     opacity: 1;
+}
+.left_side_chat {
+    float: left;
+    text-align: left;
+    width: 50%;
+    background-color: #f9f8f8;
+    border-radius: 25px;
+    padding: 15px;
+}
+.right_side_message {
+    float: right;
+    width: 50%;
+    text-align: end;
+    background-color: lavender;
+    border-radius: 25px;
+    padding: 15px;
 }
 
 @media (max-width: 768px) {

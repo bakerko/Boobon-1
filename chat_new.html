@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/chat.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-
-
 </head>
 <body>
 
@@ -21,8 +19,26 @@
         <form action="" class="form-container">
             <p class="msg"><b><label for="msg"></label>Напишите Ваше сообщение</b></p><br>
             <p class="msg"><label for="msg"></label>Операторы online!</p>
-            <div class="chat-area"></div>
-            <textarea placeholder="Введите сообщение..." name="msg" id="msg" required></textarea>
+            <div class="chat-area">
+                <div class="left_side_chat">
+                    <time datetime="2020-05-12 19:00">12.05.2020</time>
+                    <p class="" id="">Привет. Хочу купить у вас тонну шариков разных там.... красивых и не
+                        красивых</p>
+                </div>
+                <div class="right_side_message">
+                    <form action="/home/message_add/" method="post">
+                        <input type="hidden" name="type" value="1">
+                        <input type="hidden" name="parent_id" value="5">
+                        <time datetime="2020-05-12 19:00">12.05.2020</time>
+                        <p>Да, купите какой-то текст</p>
+                    </form>
+                </div>
+                <div class="left_side_chat">
+                    <time datetime="2020-05-12 19:00">12.05.2020</time>
+                    <p class="" >Привет. снова какой-то текст</p>
+                </div>
+            </div>
+            <textarea placeholder="Введите сообщение..."  name="msg" id="msg" required></textarea>
 
             <button class="send_button" type="submit"><i class="fas fa-arrow-circle-up"></i></button>
         </form>
