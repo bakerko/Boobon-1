@@ -104,14 +104,14 @@ textarea {
 .left_side_chat {
     float: left;
     text-align: left;
-    width: 50%;
+    min-width: 50%;
     background-color: #f9f8f8;
     border-radius: 25px;
     padding: 15px;
 }
 .right_side_message {
     float: right;
-    width: 50%;
+    min-width: 50%;
     text-align: end;
     background-color: lavender;
     border-radius: 25px;

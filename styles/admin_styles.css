@@ -251,3 +251,11 @@ min-width: 60%;
     border-radius: 25px;
     padding: 15px;
 }
+.inline-flex {
+    display: inline-flex;
+    margin: 8px 12px 8px 0;
+    background-color: ghostwhite;
+}
+.margin5 {
+    margin-top: 6px;
+}
