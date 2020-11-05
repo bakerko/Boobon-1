@@ -6,6 +6,13 @@
     .adaptive_float {
         float: right;
     }
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .sm {
+        font-size: 11px;
+        padding: 0px 10px;
+    }
 
     section {
         width: 100%;

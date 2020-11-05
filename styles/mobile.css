@@ -4,7 +4,12 @@
     }
 
     .container {
-        padding: 0 25px;
+        padding: 0 15px;
+    }
+
+    .sm {
+        padding: 0 5px;
+        font-size: 12px;
     }
 
     .wrapper {
@@ -32,6 +37,7 @@
     .mobile_grid {
         display: grid;
     }
+
     .mobile_only {
         display: block;
     }
@@ -41,15 +47,18 @@
         display: inline-flex;
         justify-content: center;
     }
+
     .dev_title {
         text-align: center;
         font-size: 16px;
     }
+
     .dev_img {
         margin: 50px auto;
         display: table;
 
     }
+
     .dog {
         width: 155px;
         height: auto;
@@ -86,6 +95,7 @@
     .footer_landscape {
         padding-top: 20px;
     }
+
     .footer_landscape_item {
         width: 100%;
     }
@@ -105,6 +115,7 @@
     .footer_link {
         width: max-content;
     }
+
     .baloon_small {
         width: 228px;
         height: auto;
@@ -135,6 +146,7 @@
 
     .card_button {
         margin-left: 0;
+        font-size: 10px;
     }
 
     .bordered {
@@ -204,6 +216,10 @@
     .mob_baloon {
         height: auto;
         width: 260px;
+    }
+
+    .price {
+        font-size: 13px
     }
 
     .sidenav {

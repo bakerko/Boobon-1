@@ -1,6 +1,6 @@
 @media (max-width: 376px) {
     .wrapper_main {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .wrapper {
