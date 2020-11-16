@@ -39,6 +39,7 @@ section {
 .color-violet {
     background-color: violet;
 }
+
 input, textarea, button {
     outline: none;
 }
@@ -606,6 +607,7 @@ ul {
 .clear {
     clear: both;
 }
+
 .inline-flex {
     display: inline-flex;
     margin: 8px 12px 8px 0;
@@ -659,6 +661,11 @@ ul {
     padding-bottom: 10px;
 }
 
+.product_description {
+    float: right;
+    width: 59%;
+}
+
 .text_description {
     border: 1px solid lightgrey;
     border-radius: 3px;
@@ -673,17 +680,19 @@ ul {
     font-size: 24px;
 }
 
-.product_description_top {
-    width: 65%;
-}
-
 .buy_button {
     background-color: black;
     color: white;
     padding: 10px 10%;
     font-size: larger;
 }
-
+.cart_button {
+    font-size: larger;
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    margin: 0;
+}
 .invert_color {
     filter: invert(100%);
 }
@@ -695,6 +704,10 @@ ul {
 .center {
     align-items: center;
     margin: 20px;
+}
+.cart-button {
+    width: max-content;
+    padding: 10px 12%;
 }
 
 .right_side_table {

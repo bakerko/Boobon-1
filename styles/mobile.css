@@ -48,6 +48,10 @@
         justify-content: center;
     }
 
+    .cart_button {
+        padding: 10px 16px;
+    }
+
     .dev_title {
         text-align: center;
         font-size: 16px;

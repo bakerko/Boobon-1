@@ -17,23 +17,31 @@
     .font_xl {
         font-size: 16px;
     }
+
     .font_xs {
         font-size: x-small;
     }
 
+    .product_description {
+        width: 100%
+    }
 
     .top_nav_bar {
         flex-direction: column;
     }
+
     .colorblack {
         color: black;
     }
+
     .wrapper {
         grid-template-columns: 1fr 1fr;
     }
+
     .submenu {
         width: 125px;
     }
+
     .submenu a {
         font-size: 10px;
     }
@@ -55,9 +63,11 @@
     .tablet_cart {
         display: block;
     }
-     .checkout_box {
-         width: 100%;
-     }
+
+    .checkout_box {
+        width: 100%;
+    }
+
     .tablet_description {
         width: 100%;
         margin-bottom: 30px;
